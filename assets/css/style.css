@@ -1730,3 +1730,11 @@ p.form-message.success, p.form-message.error {
       cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+.about-skills .skill-item .skill-header .skill-title {
+  width:80%;
+}
