@@ -1742,3 +1742,13 @@ p.form-message.success, p.form-message.error {
   text-transform: uppercase;
   line-height: 1.6em;
 }
+.contact-box .contact-content .contact-price {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #f68d2b;
+}
+p {
+  font-size: 14px;
+}
