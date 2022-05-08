@@ -1,0 +1,91 @@
+.headers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	@media (max-width: $breakpoint-mobile) {
+		height: 60px;
+	}
+	.left {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		width: 49%;
+		.logo {
+			img {
+				width: auto;
+				height: 50px;
+				@media (max-width: $breakpoint-mobile) {
+					height: 34px;
+				}
+			}
+		}
+		p {
+			margin-left: 1.5rem;
+			font-size: 1.25rem;
+			font-weight: $light;
+			color: $secondary;
+			@media (max-width: $breakpoint-mobile) {
+				display: none;
+			}
+		}
+	}
+	.right {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		width: 49%;
+		.icon {
+			display: flex;
+			margin-left: 3rem;
+			transition: $transition;
+			&:hover {
+				.svg {
+					fill: $black;
+				}
+			}
+			.svg {
+				width: 24px;
+				height: 24px;
+				fill: $secondary;
+				@media (max-width: $breakpoint-mobile) {
+					width: 28px;
+					height: 28px;
+				}
+			}
+		}
+		.menus {
+			.dropdown-menu {
+				border-radius: 0;
+				@include corners-bottom;
+				@include dropshadows;
+				border: 1px solid $borders;
+				margin-top: 1.6rem !important;
+				min-width: 220px;
+				border-top: none;
+				@media (max-width: $breakpoint-mobile) {
+					margin-top: 0.85rem !important;
+				}
+				li {
+					a {
+						@include corners;
+						margin: 0 0.75rem;
+						padding: 0.75rem 1.5rem;
+						width: auto;
+						font-size: 1rem;
+						font-weight: $bold;
+						color: $secondary;
+						transition: $transition;
+						&:hover {
+							color: $black;
+							background-color: $orange-light;
+						}
+					}
+				}
+			}
+		}
+	}
+}

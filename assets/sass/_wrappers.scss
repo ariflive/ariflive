@@ -1,0 +1,17 @@
+.wrappers {
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	&.full {
+		width: 100%;
+	}
+	&.bg {
+		background-color: $bg;
+	}
+	&.sep-bottom {
+		border-bottom: 1px solid $borders;
+	}
+	&.sep-top {
+		border-top: 1px solid $borders;
+	}
+}

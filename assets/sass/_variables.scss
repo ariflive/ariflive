@@ -1,0 +1,46 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$font: Roboto, sans-serif;
+$transition: all 0.3s ease;
+
+$lighter: 100;
+$light: 300;
+$normal: 400;
+$bold: 500;
+$bolder: 700;
+
+$breakpoint-desktop-xl: 1920px;
+$breakpoint-desktop-lg: 1440px;
+$breakpoint-desktop: 1280px;
+$breakpoint-tablet-lg: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 640px;
+$breakpoint-mobile-sm: 480px;
+$breakpoint-mobile-xs: 350px;
+
+$breakpoint-width-1800: 1800px;
+$breakpoint-width-1700: 1700px;
+$breakpoint-width-1600: 1600px;
+$breakpoint-width-420: 420px;
+
+$breakpoint-height-650: 650px;
+$breakpoint-height-600: 600px;
+$breakpoint-height-550: 550px;
+$breakpoint-height-500: 500px;
+
+$maxWidth: 1440px;
+$maxWidth-sm: 1280px;
+$maxWidth-xs: 1024px;
+
+$corner-sm: 0.35rem;
+$corner: 0.65rem;
+$corner-lg: 6rem;
+
+$zindex-loader: 110;
+$zindex-loader-backdrop: 100;
+$zindex-modal-mobile: 60;
+$zindex-topbar: 50;
+$zindex-backdrop: 30;
+$zindex-shimmer: 25;
+$zindex-slider-arrow: 20;
+$zindex-tag: 10;

@@ -1,0 +1,219 @@
+.card-white {
+	@include corners;
+	@include dropshadows3x;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.25rem 1.5rem;
+	background-color: $white;
+	border: 1px solid $borders;
+	transition: $transition;
+	&:hover {
+		border: 1px solid $primary;
+	}
+	.image {
+		width: auto;
+		height: 140px;
+		@media (max-width: $breakpoint-mobile) {
+			height: 110px;
+		}
+	}
+	.contents {
+		margin-top: 1rem;
+		h5 {
+			font-size: 1.35rem;
+			font-weight: $bold;
+			color: $black;
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 1.25rem;
+			}
+		}
+		p {
+			margin: 0.5rem 0;
+			font-size: 1rem;
+			font-weight: $normal;
+			color: $secondary;
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.95rem;
+			}
+		}
+		.link {
+			@include corners-lg;
+			display: inline-flex;
+			margin-top: 0.25rem;
+			padding: 0.65rem 1.5rem;
+			font-size: 0.85rem;
+			font-weight: $normal;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $white;
+			background-color: $black;
+			transition: $transition;
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.75rem;
+			}
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
+}
+
+
+
+.card-block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	.image {
+		@include corners-lg;
+		position: relative;
+    overflow: hidden;
+		width: 100%;
+		height: 240px;
+		@media (max-width: $breakpoint-desktop) {
+			height: 200px;
+		}
+		@media (max-width: $breakpoint-tablet-lg) {
+			height: 180px;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+		img {
+			transition: $transition;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.contents {
+		p {
+			margin-top: 1rem;
+			font-size: 0.90rem;
+			font-weight: $light;
+			text-transform: uppercase;
+			color: $secondary;
+			@media (max-width: $breakpoint-tablet-lg) {
+				font-size: 0.80rem;
+			}
+		}
+		h5 {
+			margin-top: 0.5rem;
+			font-size: 1.35rem;
+			font-weight: $bold;
+			color: $black;
+			@media (max-width: $breakpoint-tablet-lg) {
+				margin-top: 0.25rem;
+				font-size: 1.25rem;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 1.15rem;
+			}
+			a {
+				text-decoration: none;
+				color: $black;
+				transition: $transition;
+				&:hover {
+					text-decoration: none;
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+
+
+.card-review {
+	@include corners;
+	@include dropshadows;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.5rem 1.5rem;
+	background-color: $white;
+	border: 1px solid $borders;
+	transition: $transition;
+	.review {
+		font-size: 0.95rem;
+		line-height: 1.75rem;
+		font-weight: $normal;
+		color: $black;
+		@media (max-width: $breakpoint-tablet-lg) {
+			font-size: 0.90rem;
+			line-height: 1.5rem;
+		}
+		@media (max-width: $breakpoint-tablet) {
+			@include limit-six;
+			font-size: 0.85rem;
+			line-height: 1.25rem;
+		}
+	}
+	.user {
+		display: flex;
+		flex-direction: row;
+		margin-top: 1.75rem;
+		@media (max-width: $breakpoint-tablet-lg) {
+			margin-top: 1.5rem;
+		}
+		@media (max-width: $breakpoint-tablet) {
+			margin-top: 1rem;
+		}
+		.left {
+			width: 25%;
+			.user-image {
+				@include circles;
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				width: 40px;
+				height: 40px;
+				@media (max-width: $breakpoint-tablet-lg) {
+					width: 36px;
+					height: 36px;
+				}
+				img {
+					transition: $transition;
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.right {
+			width: 75%;
+			p {
+				font-size: 1.05rem;
+				line-height: 1.25rem;
+				font-weight: $normal;
+				color: $black;
+				@media (max-width: $breakpoint-tablet-lg) {
+					font-size: 0.90rem;
+					line-height: 1.05rem;
+				}
+				@media (max-width: $breakpoint-tablet) {
+					font-size: 0.85rem;
+					line-height: 1rem;
+				}
+			}
+			small {
+				display: block;
+				margin-top: 0.25rem;
+				font-size: 0.80rem;
+				font-weight: $normal;
+				color: $secondary;
+				@media (max-width: $breakpoint-tablet-lg) {
+					margin-top: 0.15rem;
+					font-size: 0.70rem;
+				}
+				@media (max-width: $breakpoint-tablet) {
+					margin-top: 0.25rem;
+					font-size: 0.65rem;
+				}
+			}
+		}
+	}
+}

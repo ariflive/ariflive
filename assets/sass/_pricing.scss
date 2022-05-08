@@ -1,0 +1,233 @@
+.pricing {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem auto;
+	width: 98%;
+	max-width: $maxWidth;
+	@media (max-width: $breakpoint-tablet) {
+		margin: 2rem auto;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		width: 90%;
+	}
+	.listing {
+		margin-top: 1rem;
+		@media (max-width: $breakpoint-mobile) {
+			margin-top: 0;
+		}
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			li {
+				display: grid;
+				margin-top: 2rem;
+				padding: 0 1.5rem;
+				width: 33.333333%;
+				@media (max-width: $breakpoint-tablet) {
+					margin-top: 1rem;
+					padding: 0 0.5rem;
+				}
+				@media (max-width: $breakpoint-mobile) {
+					margin-bottom: 1rem;
+					width: 100%;
+				}
+				.card {
+					@include corners-lg;
+					position: relative;
+					overflow: inherit;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					padding: 2rem 2rem;
+					background-color: $bg;
+					border: none;
+					transition: $transition;
+					@media (max-width: $breakpoint-tablet) {
+						padding: 1.5rem 1.5rem;
+					}
+					&.popular {
+						border: 2px solid $primary;
+						background-color: $white;
+						ul.samples {
+							li {
+								background-color: $primary;
+								a {
+									color: $white;
+								}
+								&:hover {
+									background-color: $black;
+									a {
+										color: $white;
+									}
+								}
+							}
+						}
+					}
+					.tag {
+						@include corners;
+						z-index: 99;
+						position: absolute;
+						top: -0.65rem;
+						left: 50%;
+						transform: translateX(-50%);
+						padding: 0 0.35rem;
+						font-size: 0.80rem;
+						font-weight: $normal;
+						color: $white;
+						background-color: $primary;
+					}
+					h3 {
+						margin-bottom: 0.25rem;
+						font-size: 1.45rem;
+						font-weight: $normal;
+						color: $black;
+						@media (max-width: $breakpoint-tablet) {
+							font-size: 1.35rem;
+						}
+					}
+					p {
+						font-size: 0.90rem;
+						font-weight: $light;
+						color: $secondary;
+						@media (max-width: $breakpoint-tablet) {
+							font-size: 0.80rem;
+						}
+					}
+					.price {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						margin: 1rem 0;
+						.amount {
+							font-size: 2rem;
+							font-weight: $bold;
+							color: $black;
+							@media (max-width: $breakpoint-tablet) {
+								font-size: 1.85rem;
+							}
+						}
+						.currency {
+							margin: 0 0.45rem;
+							font-size: 1.15rem;
+							font-weight: $normal;
+							color: $secondary;
+							@media (max-width: $breakpoint-tablet) {
+								font-size: 1rem;
+							}
+						}
+					}
+					.line {
+						display: flex;
+						margin: 0 0 1rem 0;
+						width: 60px;
+						height: 4px;
+						background-color: $primary;
+						@media (max-width: $breakpoint-tablet) {
+							width: 50px;
+							height: 3px;
+						}
+					}
+					.sep {
+						display: flex;
+						margin: 0 0 1rem 0;
+						width: 100%;
+						height: 1px;
+						background-color: $borders;
+					}
+					h6 {
+						margin: 0.95rem 0;
+						font-size: 0.90rem;
+						font-weight: $normal;
+						text-transform: uppercase;
+						color: $black;
+						@media (max-width: $breakpoint-tablet) {
+							font-size: 0.85rem;
+						}
+					}
+					ul.items {
+						display: flex;
+						flex-direction: column;
+						margin: 0 0 1rem 0;
+						padding: 0;
+						width: 100%;
+						li {
+							position: relative;;
+							margin: 0 0 0.65rem 0;
+							padding: 0 0 0 1.45rem;
+							width: 100%;
+							font-size: 0.90rem;
+							line-height: 1.05rem;
+							font-weight: $normal;
+							color: $secondary;
+							@media (max-width: $breakpoint-tablet) {
+								font-size: 0.85rem;
+							}
+							&:before {
+								content: url('/assets/images/ok.svg');
+								position: absolute;
+								z-index: 99;
+								left: 0;
+								top: 1px;
+							}
+							&.cross {
+								&:before {
+									content: url('/assets/images/cross.svg');
+								}
+							}
+						}
+					}
+					ul.samples {
+						display: flex;
+						flex-direction: row;
+						margin: 0;
+						padding: 0;
+						width: 100%;
+						li {
+							@include circles;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							margin: 0 0.5rem 0 0;
+							padding: 0;
+							width: 36px;
+							height: 36px;
+							background-color: $black;
+							@media (max-width: $breakpoint-tablet) {
+								margin: 0 0.35rem 0 0;
+								width: 32px;
+								height: 32px;
+							}
+							a {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								width: 36px;
+								height: 36px;
+								font-size: 0.80rem;
+								font-weight: $bold;
+								text-decoration: none;
+								color: $white;
+								transition: $transition;
+								@media (max-width: $breakpoint-tablet) {
+									width: 32px;
+									height: 32px;
+									font-size: 0.75rem;
+								}
+							}
+							&:hover {
+								background-color: $primary;
+								a {
+									color: $white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

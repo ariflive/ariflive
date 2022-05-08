@@ -1,0 +1,87 @@
+.sticky {
+	overflow: visible;
+	position: fixed;
+	right: 3rem;
+	bottom: 9rem;
+	@media (max-width: $breakpoint-desktop-lg) {
+		right: 2rem;
+	}
+	@media (max-width: $breakpoint-tablet-lg) {
+		bottom: 3rem;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		right: 1rem;
+	}
+	.image {
+		@include dropshadows2x;
+		@include circles;
+		overflow: inherit;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		background-color: $white;
+		opacity: 0.65;
+		transition: $transition;
+		@media (max-width: $breakpoint-mobile) {
+			width: 40px;
+			height: 40px;
+		}
+		&:hover {
+			opacity: 1.0;
+			.tip {
+				opacity: 1.0;
+			}
+		}
+		&.email {
+			margin-bottom: 1.5rem;
+			img {
+				width: 36px;
+				height: 36px;
+				@media (max-width: $breakpoint-mobile) {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			@media (max-width: $breakpoint-mobile) {
+				width: 32px;
+				height: 32px;
+			}
+		}
+		.tip {
+			@include corners;
+			position: absolute;
+			display: flex;
+			position: absolute;
+			bottom: -1.35rem;
+			right: 0;
+			width: max-content;
+			padding: 0.25rem 0.35rem 0.15rem 0.35rem;
+			font-size: 0.70rem;
+			line-height: 1rem;
+			font-weight: $normal;
+			text-transform: uppercase;
+			color: $white;
+			background-color: $black;
+			opacity: 0;
+		}
+	}
+}
+
+
+
+.sticky-header {
+	@include dropshadows;
+	background-color: $white;
+	@media (max-width: $breakpoint-mobile) {
+		position: fixed;
+		z-index: $zindex-topbar;
+		top: -1px;
+	}
+}

@@ -1,0 +1,76 @@
+.reviews {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem auto;
+	max-width: $maxWidth-xs;
+	@media (max-width: $breakpoint-tablet) {
+		margin: 2rem auto;
+	}
+	.listing {
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			li {
+				display: grid;
+				margin-top: 2rem;
+				padding: 0 1.5rem;
+				width: 33.333333%;
+				@media (max-width: $breakpoint-tablet) {
+					margin-top: 1rem;
+					padding: 0 0.75rem;
+				}
+				@media (max-width: $breakpoint-mobile) {
+					width: 100%;
+				}
+				&.paging {
+					width: 100%;
+					.link {
+						@include corners-lg;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						margin: 0 auto;
+						padding: 0.75rem 2.5rem;
+						width: fit-content;
+						text-decoration: none;
+						background-color: $black;
+						transition: $transition;
+						@media (max-width: $breakpoint-tablet-lg) {
+							padding: 0.5rem 1.5rem;
+						}
+						&:hover {
+							background-color: $primary;
+						}
+						.label {
+							font-size: 0.95rem;
+							font-weight: $bold;
+							text-transform: uppercase;
+							color: $white;
+							@media (max-width: $breakpoint-tablet-lg) {
+								font-size: 0.80rem;
+							}
+							@media (max-width: $breakpoint-mobile) {
+								font-size: 0.70rem;
+							}
+						}
+						.svg {
+							margin: 0 0.5rem;
+							width: auto;
+							height: 16px;
+							fill: $white;
+							@media (max-width: $breakpoint-tablet-lg) {
+								height: 12px;
+							}
+							@media (max-width: $breakpoint-mobile) {
+								height: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
