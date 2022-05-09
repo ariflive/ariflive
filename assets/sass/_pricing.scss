@@ -67,7 +67,7 @@
 					}
 					.tag {
 						@include corners;
-						z-index: 99;
+						z-index: $zindex-tag;
 						position: absolute;
 						top: -0.65rem;
 						left: 50%;
@@ -166,7 +166,7 @@
 							}
 							&:before {
 								position: absolute;
-								z-index: $zindex-bullets;
+								z-index: $zindex-bullet;
 								left: 0;
 								top: 1px;
 								content: url('/assets/images/ok.svg');
