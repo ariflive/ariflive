@@ -117,6 +117,27 @@
 								font-size: 1rem;
 							}
 						}
+						.or {
+							margin: 0 0.45rem 0 0.15rem;
+							font-size: 1rem;
+							font-weight: $normal;
+							color: $borders;
+							@media (max-width: $breakpoint-tablet) {
+								font-size: 1rem;
+							}
+						}
+						.usd {
+							@include corners;
+							margin: 0 0.25rem;
+							padding: 0.15rem 0.35rem;
+							font-size: 0.75rem;
+							font-weight: $bolder;
+							color: $primary;
+							background-color: $orange-light;
+							@media (max-width: $breakpoint-tablet) {
+								font-size: 1rem;
+							}
+						}
 					}
 					.line {
 						display: flex;
