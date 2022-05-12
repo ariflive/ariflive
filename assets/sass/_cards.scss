@@ -66,11 +66,12 @@
 	flex-direction: column;
 	align-items: flex-start;
 	.image {
+		@include dropshadows;
 		@include corners-lg;
 		position: relative;
-    overflow: hidden;
 		width: 100%;
 		height: 240px;
+		border: 1px solid $borders;
 		@media (max-width: $breakpoint-desktop) {
 			height: 200px;
 		}
