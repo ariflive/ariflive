@@ -60,7 +60,7 @@
 				margin-bottom: 0.75rem;
 				font-family: 'Courier New', Courier, monospace;
 				font-size: 1.75rem;
-				color: $secondary;
+				color: $secondary-70;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 1.65rem;
 				}
@@ -72,6 +72,7 @@
 				}
 				@media (max-width: $breakpoint-mobile) {
 					margin-bottom: 0.5rem;
+					font-size: 1rem;
 				}
 			}
 			h5 {
@@ -101,7 +102,7 @@
 			h1 {
 				font-size: 2rem;
 				font-weight: $lighter;
-				color: $secondary;
+				color: $secondary-80;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 1.85rem;
 				}
@@ -115,7 +116,7 @@
 					font-size: 1.35rem;
 				}
 				@media (max-width: $breakpoint-mobile-sm) {
-					font-size: 1.25rem;
+					font-size: 1.15rem;
 				}
 			}
 		}

@@ -5,7 +5,17 @@ $borders: #D5D5D5;
 $badges: #FF8C00;
 
 $primary: #FF8C00;
+
 $secondary: #6B6B6B;
+$secondary-10: mix($white, $secondary, 90%);
+$secondary-20: mix($white, $secondary, 80%);
+$secondary-30: mix($white, $secondary, 70%);
+$secondary-40: mix($white, $secondary, 60%);
+$secondary-50: mix($white, $secondary, 50%);
+$secondary-60: mix($white, $secondary, 40%);
+$secondary-70: mix($white, $secondary, 30%);
+$secondary-80: mix($white, $secondary, 20%);
+$secondary-90: mix($white, $secondary, 10%);
 
 $green: #81C995;
 $green-light: #CEEAD6;

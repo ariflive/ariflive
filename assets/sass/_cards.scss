@@ -30,11 +30,11 @@
 		}
 		p {
 			margin: 0.5rem 0;
-			font-size: 1rem;
+			font-size: 0.825rem;
 			font-weight: $normal;
-			color: $secondary;
+			color: $secondary-80;
 			@media (max-width: $breakpoint-mobile) {
-				font-size: 0.95rem;
+				font-size: 0.8125rem;
 			}
 		}
 		.link {
@@ -142,7 +142,7 @@
 		font-size: 0.95rem;
 		line-height: 1.75rem;
 		font-weight: $normal;
-		color: $black;
+		color: $secondary;
 		@media (max-width: $breakpoint-tablet-lg) {
 			font-size: 0.90rem;
 			line-height: 1.5rem;
@@ -203,9 +203,9 @@
 			small {
 				display: block;
 				margin-top: 0.25rem;
-				font-size: 0.80rem;
+				font-size: 0.75rem;
 				font-weight: $normal;
-				color: $secondary;
+				color: $secondary-70;
 				@media (max-width: $breakpoint-tablet-lg) {
 					margin-top: 0.15rem;
 					font-size: 0.70rem;

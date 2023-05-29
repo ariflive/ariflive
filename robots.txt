@@ -1,2 +1,10 @@
 User-agent: *
-Allow: /
+
+Allow: /index.html
+
+Disallow: /___.html
+Disallow: /portfolio/
+Disallow: /testimonials/
+Disallow: /clients/
+Disallow: /web-design/
+Disallow: /logo-design/

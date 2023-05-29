@@ -25,9 +25,9 @@
 		}
 		p {
 			margin-left: 1.5rem;
-			font-size: 1.25rem;
+			font-size: 1.05rem;
 			font-weight: $light;
-			color: $secondary;
+			color: $secondary-80;
 			@media (max-width: $breakpoint-mobile) {
 				display: none;
 			}
@@ -51,7 +51,7 @@
 			.svg {
 				width: 24px;
 				height: 24px;
-				fill: $secondary;
+				fill: $secondary-70;
 				@media (max-width: $breakpoint-mobile) {
 					width: 28px;
 					height: 28px;

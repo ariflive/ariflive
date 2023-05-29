@@ -215,7 +215,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; // Lets it scroll lazy
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   @media (max-width: $breakpoint-mobile) {
     padding-bottom: 1.75rem;
   }
