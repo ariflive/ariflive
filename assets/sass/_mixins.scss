@@ -299,26 +299,26 @@
 
 @mixin dropshadows {
   -webkit-box-shadow: 0 5px 5px -5px rgba(17, 16, 16, 0.2);
-	   -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.20);
-	        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.20);
 }
 
 @mixin dropshadows2x {
   -webkit-box-shadow: 0 10px 10px -10px rgba(17, 16, 16, 0.2);
-	   -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.20);
-	        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.20);
 }
 
 @mixin dropshadows3x {
   -webkit-box-shadow: 0 15px 15px -15px rgba(17, 16, 16, 0.2);
-	   -moz-box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.20);
-	        box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.20);
 }
 
 @mixin dropshadows4x {
   -webkit-box-shadow: 0 20px 20px -20px rgba(17, 16, 16, 0.2);
-	   -moz-box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.20);
-	        box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.20);
 }
 
 @mixin textshadows {
