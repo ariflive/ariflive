@@ -40,10 +40,10 @@
 				height: 250px;
 			}
 			@media (max-width: $breakpoint-mobile) {
-				height: 150px;
+				height: 160px;
 			}
 			@media (max-width: $breakpoint-mobile-sm) {
-				height: 120px;
+				height: 160px;
 			}
 		}
 	}
@@ -60,7 +60,7 @@
 				margin-bottom: 0.75rem;
 				font-family: 'Courier New', Courier, monospace;
 				font-size: 1.75rem;
-				color: $secondary-70;
+				color: $secondary;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 1.65rem;
 				}
@@ -90,7 +90,7 @@
 					font-size: 3.25rem;
 				}
 				@media (max-width: $breakpoint-tablet) {
-					font-size: 2.5rem;
+					font-size: 1.85rem;
 				}
 				@media (max-width: $breakpoint-mobile) {
 					margin-bottom: 0.5rem;
@@ -102,7 +102,8 @@
 			h1 {
 				font-size: 2rem;
 				font-weight: $lighter;
-				color: $secondary-80;
+				line-height: normal;
+				color: $secondary;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 1.85rem;
 				}
@@ -113,7 +114,8 @@
 					font-size: 1.55rem;
 				}
 				@media (max-width: $breakpoint-tablet) {
-					font-size: 1.35rem;
+					font-size: 1.05rem;
+					font-weight: $light;
 				}
 				@media (max-width: $breakpoint-mobile-sm) {
 					font-size: 1.15rem;

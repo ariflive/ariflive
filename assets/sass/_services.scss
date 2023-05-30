@@ -59,15 +59,33 @@
 		transform: translateX(-50%);
 	}
 	.listing {
-		@include scrollbarsX;
+		@media (max-width: $breakpoint-tablet) {
+			@include scrollbarsX;
+		}
 		ul {
 			display: flex;
-			width: fit-content;
-			margin: 0 auto;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			flex-wrap: wrap;
+			@media (max-width: $breakpoint-tablet) {
+				flex-direction: initial;
+				align-items: initial;
+				justify-content: initial;
+				flex-wrap: initial;
+				margin: 0 auto;
+				width: fit-content;
+			}
 			li {
-				margin-top: 1.75rem;
-				margin-right: 2rem;
+				margin: 1rem;
 				width: 300px;
+				@media (max-width: $breakpoint-tablet-lg) {
+					width: 28%;
+				}
+				@media (max-width: $breakpoint-tablet) {
+					margin: 1.75rem 2rem 0 0;
+					width: 280px;
+				}
 				@media (max-width: $breakpoint-mobile) {
 					margin-top: 1rem;
 					width: 250px;

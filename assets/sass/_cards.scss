@@ -6,8 +6,9 @@
 	align-items: center;
 	padding: 1.25rem 1.5rem;
 	background-color: $white;
-	border: 1px solid $borders;
+	border: 1px solid $secondary-10;
 	transition: $transition;
+	pointer-events: none;
 	&:hover {
 		border: 1px solid $primary;
 	}
@@ -18,21 +19,40 @@
 			height: 110px;
 		}
 	}
+	.icons {
+		display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+		flex-wrap: wrap;
+    width: 100%;
+		img {
+			margin: 0.5rem 0.5rem 0.5rem 0;
+			width: auto;
+			height: 24px;
+			@media (max-width: $breakpoint-mobile) {
+				height: 18px;
+			}
+		}
+	}
 	.contents {
 		margin-top: 1rem;
 		h5 {
-			font-size: 1.35rem;
+			font-size: 1.45rem;
 			font-weight: $bold;
 			color: $black;
-			@media (max-width: $breakpoint-mobile) {
+			@media (max-width: $breakpoint-tablet) {
 				font-size: 1.25rem;
 			}
 		}
 		p {
 			margin: 0.5rem 0;
-			font-size: 0.825rem;
+			font-size: 0.95rem;
 			font-weight: $normal;
 			color: $secondary-80;
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 0.85rem;
+			}
 			@media (max-width: $breakpoint-mobile) {
 				font-size: 0.8125rem;
 			}
@@ -71,7 +91,7 @@
 		position: relative;
 		width: 100%;
 		height: 240px;
-		border: 1px solid $borders;
+		border: 1px solid $secondary-10;
 		@media (max-width: $breakpoint-desktop) {
 			height: 200px;
 		}
@@ -100,10 +120,13 @@
 			@media (max-width: $breakpoint-tablet-lg) {
 				font-size: 0.80rem;
 			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.75rem;
+			}
 		}
 		h5 {
 			margin-top: 0.5rem;
-			font-size: 1.35rem;
+			font-size: 1.30rem;
 			font-weight: $bold;
 			color: $black;
 			@media (max-width: $breakpoint-tablet-lg) {
@@ -112,6 +135,9 @@
 			}
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1.15rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 1.05rem;
 			}
 			a {
 				text-decoration: none;
@@ -205,6 +231,7 @@
 				margin-top: 0.25rem;
 				font-size: 0.75rem;
 				font-weight: $normal;
+				line-height: initial;
 				color: $secondary-70;
 				@media (max-width: $breakpoint-tablet-lg) {
 					margin-top: 0.15rem;
