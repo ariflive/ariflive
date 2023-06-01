@@ -52,6 +52,18 @@
 		@media (max-width: $breakpoint-tablet-lg) {
 			width: 29%;
 		}
+		.link {
+			font-size: 0.85rem;
+			font-weight: $bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $black;
+			transition: $transition;
+			&:hover {
+				text-decoration: none;
+				color: $primary;
+			}
+		}
 		.icon {
 			display: flex;
 			margin-left: 3rem;

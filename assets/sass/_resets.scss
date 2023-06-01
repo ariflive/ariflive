@@ -45,11 +45,15 @@ table {
   border-spacing: 0;
 }
 html {
+  height: 100%;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 	@media (max-width: $breakpoint-mobile) {
 		padding-top: 60px;
 	}
@@ -60,5 +64,4 @@ body {
     }
   }
 }
-
 
