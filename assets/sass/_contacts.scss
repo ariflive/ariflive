@@ -1,5 +1,6 @@
 .contacts {
 	@include corners-lg;
+	overflow: inherit;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -15,7 +16,6 @@
 		padding: 1.5rem 2rem;
 	}
 	@media (max-width: $breakpoint-mobile) {
-		display: inline-table;
 		flex-direction: column;
 	}
 	.left {
