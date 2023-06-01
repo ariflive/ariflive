@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 3rem auto;
-	width: 80%;
+	width: 85%;
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin: 2rem auto;
 	}
@@ -18,7 +18,7 @@
 		flex-direction: row;
 		justify-content: flex-end;
 		align-items: center;
-		width: 45%;
+		width: 40%;
 		@media (max-width: $breakpoint-mobile) {
 			margin-bottom: 1rem;
 			width: 100%;
@@ -51,7 +51,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 50%;
+		width: 55%;
 		@media (max-width: $breakpoint-mobile) {
 			width: 100%;
 		}
