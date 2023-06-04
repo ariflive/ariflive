@@ -45,11 +45,31 @@
 				font-size: 1.25rem;
 			}
 		}
+		small {
+			display: flex;
+			margin: 0.75rem 0 0.25rem 0;
+			font-size: 0.70rem;
+			font-weight: $bold;
+			text-transform: uppercase;
+			color: $secondary;
+			b {
+				margin: 0 0.25rem;
+				font-size: 0.70rem;
+				font-weight: $bold;
+				color: $secondary;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 0.85rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.8125rem;
+			}
+		}
 		p {
-			margin: 0.5rem 0;
+			margin: 0 0 0.5rem 0;
 			font-size: 0.95rem;
 			font-weight: $normal;
-			color: $secondary-80;
+			color: $secondary-70;
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 0.85rem;
 			}
