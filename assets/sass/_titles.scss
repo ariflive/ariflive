@@ -13,7 +13,7 @@
 		h2 {
 			font-size: 2.35rem;
 			font-weight: $bold;
-			color: $black;
+			color: $secondary;
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1.65rem;
 			}
@@ -24,7 +24,7 @@
 		h3 {
 			font-size: 2.05rem;
 			font-weight: $bold;
-			color: $black;
+			color: $secondary;
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1.65rem;
 			}
@@ -36,7 +36,7 @@
 			margin-top: 0.45rem;
 			font-size: 1.25rem;
 			font-weight: $light;
-			color: $secondary;
+			color: $grey;
 			@media (max-width: $breakpoint-tablet) {
 				margin-top: 0.15rem;
 				font-size: 1.1rem;

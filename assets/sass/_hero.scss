@@ -60,7 +60,7 @@
 				margin-bottom: 0.75rem;
 				font-family: 'Courier New', Courier, monospace;
 				font-size: 1.75rem;
-				color: $secondary;
+				color: $grey;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 1.65rem;
 				}
@@ -79,7 +79,7 @@
 				margin-bottom: 0.75rem;
 				font-size: 4rem;
 				font-weight: $bold;
-				color: $black;
+				color: $secondary;
 				@media (max-width: $breakpoint-desktop-lg) {
 					font-size: 3.75rem;
 				}
@@ -100,18 +100,18 @@
 				}
 			}
 			h1 {
-				font-size: 2rem;
+				font-size: 1.75rem;
+				line-height: auto;
 				font-weight: $lighter;
-				line-height: normal;
-				color: $secondary;
+				color: $grey;
 				@media (max-width: $breakpoint-desktop-lg) {
-					font-size: 1.85rem;
-				}
-				@media (max-width: $breakpoint-desktop) {
 					font-size: 1.65rem;
 				}
-				@media (max-width: $breakpoint-tablet-lg) {
+				@media (max-width: $breakpoint-desktop) {
 					font-size: 1.55rem;
+				}
+				@media (max-width: $breakpoint-tablet-lg) {
+					font-size: 1.5rem;
 				}
 				@media (max-width: $breakpoint-tablet) {
 					font-size: 1.05rem;
