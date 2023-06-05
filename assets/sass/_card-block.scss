@@ -27,6 +27,30 @@
 			height: 100%;
 		}
 	}
+	.used {
+		margin: 0.65rem 0 0 0;
+		font-size: 0.70rem;
+		font-weight: $normal;
+		text-transform: uppercase;
+		color: $grey;
+	}
+	.icons {
+		display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+		flex-wrap: wrap;
+		margin: 0;
+    width: 100%;
+		img {
+			margin: 0.45rem 0.45rem 0.45rem 0;
+			width: auto;
+			height: 19px;
+			@media (max-width: $breakpoint-mobile) {
+				height: 16px;
+			}
+		}
+	}
 	.contents {
 		p {
 			margin: 0.75rem 0 0 0;
