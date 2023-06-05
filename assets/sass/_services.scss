@@ -1,17 +1,21 @@
 .services {
 	display: flex;
 	flex-direction: column;
-	margin-top: 6rem;
+	margin: 6rem auto 0 auto;
 	padding: 2rem 0.25rem;
 	background-color: $bg;
 	@media (max-width: $breakpoint-tablet-lg) {
-		margin-top: 5rem;
+		margin: 3rem auto 0 auto;
 	}
 	@media (max-width: $breakpoint-tablet) {
-		margin-top: 4rem;
+		margin: 2rem auto 0 auto;
 	}
 	@media (max-width: $breakpoint-tablet) {
 		padding: 1.5rem 0;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		margin: 2rem auto 0 auto;
+		width: 90%;
 	}
 	.left {
 		display: flex;

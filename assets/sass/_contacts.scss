@@ -29,26 +29,23 @@
 		}
 		p {
 			font-size: 2.15rem;
-			line-height: 2.75rem;
+			line-height: initial;
 			font-weight: $bold;
 			color: $white;
 			@media (max-width: $breakpoint-tablet-lg) {
 				font-size: 2rem;
 			}
 			@media (max-width: $breakpoint-tablet) {
-				font-size: 1.5rem;
-				line-height: 2rem;
+				font-size: 1.25rem;
 			}
 			@media (max-width: $breakpoint-mobile) {
 				margin-bottom: 1rem;
 				font-size: 1.5rem;
-				line-height: 1.75rem;
 				text-align: center;
 			}
 			@media (max-width: $breakpoint-mobile) {
 				margin-bottom: 1.25rem;
 				font-size: 1.35rem;
-				line-height: 1.45rem;
 			}
 		}
 	}
@@ -112,6 +109,9 @@
 				}
 				@media (max-width: $breakpoint-tablet) {
 					height: 12px;
+				}
+				@media (max-width: $breakpoint-mobile) {
+					display: none;
 				}
 			}
 		}

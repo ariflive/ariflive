@@ -1,7 +1,7 @@
 .brands {
 	display: flex;
 	flex-direction: column;
-	margin-top: 6rem;
+	margin: 1rem auto 1rem auto;
 	padding: 2rem 0;
 	max-width: $maxWidth-xs;
 	@media (max-width: $breakpoint-tablet-lg) {
