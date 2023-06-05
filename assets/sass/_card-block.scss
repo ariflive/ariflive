@@ -34,8 +34,7 @@
 		text-transform: uppercase;
 		color: $grey;
 		@media (max-width: $breakpoint-mobile) {
-			display: none;
-			margin: 0.35rem 0 0 0;
+			margin: 0.5rem 0 0 0;
 			font-size: 0.65rem;
 		}
 	}
@@ -47,9 +46,6 @@
 		flex-wrap: wrap;
 		margin: 0;
     width: 100%;
-		@media (max-width: $breakpoint-mobile) {
-			margin: 0.5rem 0 0 0;
-		}
 		img {
 			margin: 0.45rem 0.45rem 0.45rem 0;
 			width: auto;
