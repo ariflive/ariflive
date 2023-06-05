@@ -1,0 +1,96 @@
+.card-white {
+	@include corners;
+	@include dropshadows3x;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.25rem 1.5rem;
+	background-color: $white;
+	border: 1px solid $secondary-10;
+	transition: $transition;
+	pointer-events: none;
+	&:hover {
+		border: 1px solid $primary;
+	}
+	.image {
+		width: auto;
+		height: 140px;
+		@media (max-width: $breakpoint-mobile) {
+			height: 110px;
+		}
+	}
+	.icons {
+		display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+		flex-wrap: wrap;
+    width: 100%;
+		img {
+			margin: 0.5rem 0.5rem 0.5rem 0;
+			width: auto;
+			height: 24px;
+			@media (max-width: $breakpoint-mobile) {
+				height: 18px;
+			}
+		}
+	}
+	.contents {
+		margin-top: 0.5rem;
+		h5 {
+			margin: 0 0 0.45rem 0;
+			font-size: 1.45rem;
+			font-weight: $bold;
+			color: $secondary;
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 1.25rem;
+			}
+		}
+		small {
+			display: flex;
+			margin: 0.75rem 0 0.45rem 0;
+			font-size: 0.75rem;
+			font-weight: $bold;
+			letter-spacing: 0.025rem;
+			text-transform: uppercase;
+			color: $grey;
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 0.85rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.8125rem;
+			}
+		}
+		p {
+			margin: 0 0 0.5rem 0;
+			font-size: 0.95rem;
+			font-weight: $light;
+			color: $grey;
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 0.85rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.8125rem;
+			}
+		}
+		.link {
+			@include corners-lg;
+			display: inline-flex;
+			margin-top: 0.25rem;
+			padding: 0.65rem 1.5rem;
+			font-size: 0.85rem;
+			font-weight: $normal;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $white;
+			background-color: $black;
+			transition: $transition;
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.75rem;
+			}
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
+}
