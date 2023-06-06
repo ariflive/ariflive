@@ -6,6 +6,10 @@ $borders: #D1DEE9;
 
 $primary: #F29559;
 $secondary: #283845;
+
+$orange: #F29559;
+$orange-light: #F9CAAC;
+
 $secondary-10: mix($white, $secondary, 90%);
 $secondary-20: mix($white, $secondary, 80%);
 $secondary-30: mix($white, $secondary, 70%);
@@ -16,5 +20,22 @@ $secondary-70: mix($white, $secondary, 30%);
 $secondary-80: mix($white, $secondary, 20%);
 $secondary-90: mix($white, $secondary, 10%);
 
-$orange: #F29559;
-$orange-light: #F9CAAC;
+$primary-10: mix($white, $primary, 90%);
+$primary-20: mix($white, $primary, 80%);
+$primary-30: mix($white, $primary, 70%);
+$primary-40: mix($white, $primary, 60%);
+$primary-50: mix($white, $primary, 50%);
+$primary-60: mix($white, $primary, 40%);
+$primary-70: mix($white, $primary, 30%);
+$primary-80: mix($white, $primary, 20%);
+$primary-90: mix($white, $primary, 10%);
+
+$grey-10: mix($white, $grey, 90%);
+$grey-20: mix($white, $grey, 80%);
+$grey-30: mix($white, $grey, 70%);
+$grey-40: mix($white, $grey, 60%);
+$grey-50: mix($white, $grey, 50%);
+$grey-60: mix($white, $grey, 40%);
+$grey-70: mix($white, $grey, 30%);
+$grey-80: mix($white, $grey, 20%);
+$grey-90: mix($white, $grey, 10%);

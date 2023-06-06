@@ -1,0 +1,12 @@
+.progress {
+	@include corners;
+	display: flex;
+	margin: 0.45rem 0 0.45rem 0;
+	font-size: 0.7rem;
+	font-weight: $bolder;
+	line-height: normal;
+	background-color: $bg;
+	.progress-bar {
+		background-color: $grey-70;
+	}
+}
