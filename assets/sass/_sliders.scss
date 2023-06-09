@@ -1,0 +1,122 @@
+.slick-slider {
+	width: 100%;
+	height: inherit;
+	.slick-list {
+		.slick-slide {
+			overflow: hidden;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 80vh;
+			background-color: $bg;
+			.image {
+				@include corners;
+				@include dropshadows;
+				object-fit: cover;
+				max-width: 90%;
+				max-height: 80%;
+				background-color: $white;
+			}
+			p {
+				margin: 1rem 0 0 0;
+				font-size: 1.15rem;
+				font-weight: $bold;
+				line-height: normal;
+				color: $grey;
+				@media (max-width: $breakpoint-mobile) {
+					font-size: 1.05rem;
+				}
+				@media (max-width: $breakpoint-mobile-sm) {
+					font-size: 0.95rem;
+				}
+			}
+			.icons {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				margin: 0.75rem 0 0 0;
+				img {
+					margin: 0 0.25rem;
+					width: 21px;
+					height: 21px;
+					@media (max-width: $breakpoint-mobile) {
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.slick-arrow {
+	@include circles;
+	z-index: $zindex-slider-arrow;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	opacity: 0.1;
+	transition: opacity 0.2s ease-in-out;
+	@media (max-width: $breakpoint-tablet) {
+		width: 32px;
+		height: 32px;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		width: 24px;
+		height: 24px;
+	}
+}
+.slick-next {
+	right: -3rem;
+	@media (max-width: $breakpoint-mobile) {
+		right: -0.75rem;
+	}
+}
+.slick-prev {
+	left: -3rem;
+	@media (max-width: $breakpoint-mobile) {
+		left: -0.75rem;
+	}
+}
+
+.slick-dots {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -2rem;
+	display: flex;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in-out;
+	li {
+		display: flex;
+		margin: 0 0.15rem;
+		height: 12px;
+		&.slick-active {
+			button {
+				background-color: $primary-70;
+			}
+		}
+		button {
+			overflow: hidden;
+			text-indent: -9999px;
+			background-color: $secondary-10;
+			width: 19px;
+			height: 6px;
+			border: none;
+			@media (max-width: $breakpoint-tablet) {
+				width: 16px;
+				height: 5px;
+			}
+			@media (max-width: $breakpoint-mobile-sm) {
+				width: 12px;
+				height: 3px;
+			}
+		}
+	}
+}
