@@ -38,16 +38,33 @@
 			}
 		}
 	}
-	&.web {
+	&.logo {
 		height: auto;
 		.items {
-			background-color: $grey;
+			background-color: $black;
 			img {
+				max-width: 85%;
 				max-height: 100%;
+				@media (max-width: $breakpoint-mobile) {
+					max-width: 100%;
+				}
 			}
 		}
 	}
 	&.graphic {
+		height: auto;
+		.items {
+			background-color: $black;
+			img {
+				max-width: 85%;
+				max-height: 100%;
+				@media (max-width: $breakpoint-mobile) {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	&.web {
 		height: auto;
 		.items {
 			background-color: $black;
