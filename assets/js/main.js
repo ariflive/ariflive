@@ -9,6 +9,11 @@ function callGA4Event(event) {
 // Init
 $(function() {
 
+	// Count Items
+	if ($('.js-items').length) {
+		$('.js-count').html($('.js-items').children().length);
+	}
+
 	// Load Gallery
 	if ($('.js-gallery').length) {
 		let objSlider = $('.js-slider');

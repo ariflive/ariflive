@@ -38,6 +38,17 @@
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1rem;
 			}
+			small {
+				@include corners;
+				display: inline-flex;
+				margin: 0 0.25rem;
+				padding: 0.25rem 0.45rem;
+				font-size: 0.70rem;
+				font-weight: $bold;
+				line-height: normal;
+				color: $grey;
+				background-color: $bg;
+			}
 		}
 		p {
 			margin-left: 1.5rem;
