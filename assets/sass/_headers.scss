@@ -29,6 +29,16 @@
 				}
 			}
 		}
+		h1 {
+			margin-left: 1.5rem;
+			font-size: 1.25rem;
+			font-weight: $light;
+			line-height: normal;
+			color: $grey;
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 1rem;
+			}
+		}
 		p {
 			margin-left: 1.5rem;
 			font-size: 1.05rem;
