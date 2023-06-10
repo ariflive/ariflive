@@ -50,8 +50,9 @@
 	&.graphic {
 		height: auto;
 		.items {
-			background-color: $bg;
+			background-color: $black;
 			img {
+				max-width: 85%;
 				max-height: 100%;
 			}
 		}
