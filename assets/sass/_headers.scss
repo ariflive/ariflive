@@ -25,7 +25,7 @@
 					height: 40px;
 				}
 				@media (max-width: $breakpoint-mobile) {
-					height: 34px;
+					height: 30px;
 				}
 			}
 		}
@@ -35,6 +35,10 @@
 			font-weight: $normal;
 			line-height: normal;
 			color: $grey;
+			@media (max-width: $breakpoint-mobile) {
+				margin-left: 0.5rem;
+				font-size: 1.05rem;
+			}
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1rem;
 			}
@@ -48,6 +52,9 @@
 				line-height: 0.75rem;
 				color: $grey;
 				background-color: $bg;
+				@media (max-width: $breakpoint-mobile) {
+					display: none;
+				}
 			}
 		}
 		p {
