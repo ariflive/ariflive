@@ -3,20 +3,17 @@
 	@include dropshadows3x;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	padding: 1.25rem 1.5rem;
 	background-color: $white;
 	border: 1px solid $secondary-10;
 	transition: $transition;
-	pointer-events: none;
-	&:hover {
-		border: 1px solid $primary;
-	}
 	.image {
+		margin: 0 auto;
 		width: auto;
-		height: 140px;
+		height: 120px;
 		@media (max-width: $breakpoint-mobile) {
-			height: 110px;
+			height: 90px;
 		}
 	}
 	.icons {
@@ -27,11 +24,11 @@
 		flex-wrap: wrap;
     width: 100%;
 		img {
-			margin: 0.5rem 0.5rem 0.5rem 0;
+			margin: 0 0.35rem 0.85rem 0;
 			width: auto;
-			height: 24px;
+			height: 19px;
 			@media (max-width: $breakpoint-mobile) {
-				height: 18px;
+				height: 16px;
 			}
 		}
 	}
@@ -41,6 +38,7 @@
 			margin: 0 0 0.45rem 0;
 			font-size: 1.45rem;
 			font-weight: $bold;
+			letter-spacing: -0.035rem;
 			color: $secondary;
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 1.25rem;
@@ -64,7 +62,7 @@
 		p {
 			margin: 0 0 0.5rem 0;
 			font-size: 0.95rem;
-			font-weight: $light;
+			font-weight: $normal;
 			color: $grey;
 			@media (max-width: $breakpoint-tablet) {
 				font-size: 0.85rem;
@@ -85,8 +83,10 @@
 			color: $white;
 			background-color: $black;
 			transition: $transition;
-			@media (max-width: $breakpoint-mobile) {
-				font-size: 0.75rem;
+			@media (max-width: $breakpoint-tablet) {
+				padding: 0.5rem 1.25rem;
+				font-size: 0.70rem;
+				font-weight: $bold;
 			}
 			&:hover {
 				background-color: $primary;

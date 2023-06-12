@@ -32,7 +32,7 @@
 		h1 {
 			margin-left: 1.5rem;
 			font-size: 1.25rem;
-			font-weight: $light;
+			font-weight: $normal;
 			line-height: normal;
 			color: $grey;
 			@media (max-width: $breakpoint-tablet) {
@@ -41,11 +41,11 @@
 			small {
 				@include corners;
 				display: inline-flex;
-				margin: 0 0.25rem;
+				margin: 0 0.45rem;
 				padding: 0.25rem 0.45rem;
 				font-size: 0.70rem;
 				font-weight: $bold;
-				line-height: normal;
+				line-height: 0.75rem;
 				color: $grey;
 				background-color: $bg;
 			}

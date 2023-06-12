@@ -4,8 +4,12 @@ $grey: #8197A9;
 $bg: #F2F5F6;
 $borders: #D1DEE9;
 
-$primary: #F29559;
 $secondary: #283845;
+$green: #29A173;
+
+$primary: #F29559;
+$primary-dark: #da8650;
+$primary-darker: #c27747;
 
 $orange: #F29559;
 $orange-light: #F9CAAC;
@@ -39,3 +43,17 @@ $grey-60: mix($white, $grey, 40%);
 $grey-70: mix($white, $grey, 30%);
 $grey-80: mix($white, $grey, 20%);
 $grey-90: mix($white, $grey, 10%);
+
+$green-10: mix($white, $green, 90%);
+$green-20: mix($white, $green, 80%);
+$green-30: mix($white, $green, 70%);
+$green-40: mix($white, $green, 60%);
+$green-50: mix($white, $green, 50%);
+$green-60: mix($white, $green, 40%);
+$green-70: mix($white, $green, 30%);
+$green-80: mix($white, $green, 20%);
+$green-90: mix($white, $green, 10%);
+
+$progress-bg: $bg;
+$progress-bar: $secondary-20;
+$progress-text: $grey;

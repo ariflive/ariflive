@@ -1,12 +1,21 @@
 .progress {
 	@include corners;
 	display: flex;
-	margin: 0.75rem 0 0.85rem 0;
-	font-size: 0.7rem;
-	font-weight: $bolder;
+	max-width: 95%;
+	height: 20px;
+	margin: 0.85rem 0 0.95rem 0;
 	line-height: normal;
-	background-color: $bg;
+	background-color: $progress-bg;
+	@media (max-width: $breakpoint-mobile) {
+		height: 18px;
+	}
 	.progress-bar {
-		background-color: $grey-70;
+		padding: 0 0.45rem 0 0;
+		font-size: 0.7125rem;
+		font-weight: $bolder;
+		letter-spacing: -0.015rem;
+		text-align: right;
+		color: $progress-text;
+		background-color: $progress-bar;
 	}
 }
