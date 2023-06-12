@@ -3,19 +3,17 @@
 	flex-direction: column;
 	margin: 2rem auto 0 auto;
 	padding: 3rem 0.25rem;
+	width: 100%;
 	background-color: $bg;
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin: 3rem auto 0 auto;
 	}
 	@media (max-width: $breakpoint-tablet) {
 		margin: 2rem auto 0 auto;
-	}
-	@media (max-width: $breakpoint-tablet) {
 		padding: 1.5rem 0;
 	}
 	@media (max-width: $breakpoint-mobile) {
 		margin: 2rem auto 0 auto;
-		width: 90%;
 	}
 	.left {
 		display: flex;
@@ -71,10 +69,8 @@
 			justify-content: flex-start;
 			flex-wrap: wrap;
 			margin: 0 auto;
+			width: 90%;
 			max-width: $breakpoint-desktop-lg;
-			@media (max-width: $breakpoint-tablet) {
-				max-width: 90%;
-			}
 			@media (max-width: $breakpoint-mobile) {
 				flex-direction: initial;
 				align-items: initial;
@@ -89,6 +85,9 @@
 				margin-top: 2rem;
 				padding: 0 1.5rem;
 				width: 25%;
+				@media (max-width: $breakpoint-desktop) {
+					width: 33.33%;
+				}
 				@media (max-width: $breakpoint-tablet-lg) {
 					margin-top: 1.5rem;
 					padding: 0 0.75rem;
