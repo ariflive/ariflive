@@ -65,18 +65,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body class="page-logo">
 
 
+<!-- Loader -->
+<div class="loader js-loader"></div>
+
+
 <!-- Header -->
 <header class="wrappers full sep-bottom sticky-header">
 	<div class="wrappers headers">
 		<div class="left">
 			<a href="/" class="logo">
-				<img src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
+				<img class="lazyload" src="" data-src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
 			</a>
 			<h1>Graphic Design<small class="js-count">0</small></h1>
 		</div>
 		<div class="right">
 			<a href="https://www.linkedin.com/in/ariflive/" target="_blank" class="icon" title="Linkedin" conclick="callGA4Event('linkedin');">
-				<img src="/assets/icons/linkedin.svg" alt="Linkedin" />
+				<img class="lazyload" src="" data-src="/assets/icons/linkedin.svg" alt="Linkedin" />
 			</a>
 		</div>
 	</div>
@@ -84,73 +88,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Gallery -->
-<section class="gallery-v2 graphic">
+<section class="gallery-v2 graphic js-gallery" style="visibility: hidden;">
 	<div class="items js-items">
-		<img src="/assets/gallery/graphic/cobone-spin-to-win.webp" alt="Cobone Spin to Win" />
-		<img src="/assets/gallery/graphic/women-of-tomorrow.webp" alt="Women Of Tomorrow" />
-		<img src="/assets/gallery/graphic/cobone-we-are-five.webp" alt="Cobone We're 5" />
-		<img src="/assets/gallery/graphic/expatwoman-gone-global.webp" alt="ExpatWoman Gone Global" />
-		<img src="/assets/gallery/graphic/expatwoman-gone-global-2.webp" alt="ExpatWoman Gone Global" />
-		<img src="/assets/gallery/graphic/expatwoman-demographics.webp" alt="ExpatWoman Demographics" />
-		<img src="/assets/gallery/graphic/expatwoman-effective-measure-rankings.webp" alt="ExpatWoman Demographics" />
-		<img src="/assets/gallery/graphic/expatwoman-middle-east-survey.webp" alt="ExpatWoman Middle East Survey" />
-		<img src="/assets/gallery/graphic/expatwoman-middle-east-survey-2.webp" alt="ExpatWoman Middle East Survey" />
-		<img src="/assets/gallery/graphic/expatwoman-coffee-morning.webp" alt="ExpatWoman Coffee Morning" />
-		<img src="/assets/gallery/graphic/expatwoman-coffee-shoppe.webp" alt="ExpatWoman Coffee Shoppe" />
-		<img src="/assets/gallery/graphic/expatwoman-aspin-open-house.webp" alt="ExpatWoman Aspin Open House" />
-		<img src="/assets/gallery/graphic/expatwoman-bumps.webp" alt="ExpatWoman Bumps" />
-		<img src="/assets/gallery/graphic/expatwoman-medstar.webp" alt="ExpatWoman Medstar" />
-		<img src="/assets/gallery/graphic/expatwoman-mums.webp" alt="ExpatWoman Mums" />
-		<img src="/assets/gallery/graphic/expatwoman-mums-2.webp" alt="ExpatWoman Mums" />
-		<img src="/assets/gallery/graphic/expatwoman-mums-3.webp" alt="ExpatWoman Mums" />
-		<img src="/assets/gallery/graphic/expatwoman-mums-4.webp" alt="ExpatWoman Mums" />
-		<img src="/assets/gallery/graphic/expatwoman-mums-5.webp" alt="ExpatWoman Mums" />
-		<img src="/assets/gallery/graphic/expatwoman-treasure-hunt.webp" alt="ExpatWoman Treasure Hunt" />
-		<img src="/assets/gallery/graphic/ewfood-recipe.webp" alt="EWfood Recipe" />
-		<img src="/assets/gallery/graphic/ewfood-recipe-2.webp" alt="EWfood Recipe" />
-		<img src="/assets/gallery/graphic/expatwoman-alba.webp" alt="ExpatWoman Alba" />
-		<img src="/assets/gallery/graphic/expatwoman-big-dayout.webp" alt="ExpatWoman Big Dayout" />
-		<img src="/assets/gallery/graphic/expatwoman-festive-family-fair-1.webp" alt="ExpatWoman Festive Family Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-festive-family-fair-2.webp" alt="ExpatWoman Festive Family Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-festive-family-fair-3.webp" alt="ExpatWoman Festive Family Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-festive-family-fair-4.webp" alt="ExpatWoman Festive Family Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-festive-family-fair-5.webp" alt="ExpatWoman Festive Family Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-education-fair-1.webp" alt="ExpatWoman Education Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-education-fair-2.webp" alt="ExpatWoman Education Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-education-fair-3.webp" alt="ExpatWoman Education Fair" />
-		<img src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-1.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
-		<img src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-2.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
-		<img src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-3.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
-		<img src="/assets/gallery/graphic/expatwoman-burj-al-arab-moonlit-swim.webp" alt="ExpatWoman Burj Al Arab Moonlit Swim" />
-		<img src="/assets/gallery/graphic/expatwoman-coffee-morning-1.webp" alt="ExpatWoman Coffee Morning" />
-		<img src="/assets/gallery/graphic/expatwoman-coffee-morning-2.webp" alt="ExpatWoman Coffee Morning" />
-		<img src="/assets/gallery/graphic/expatwoman-emirates-golf-club-1.webp" alt="ExpatWoman Emirates Golf Club" />
-		<img src="/assets/gallery/graphic/expatwoman-emirates-golf-club-2.webp" alt="ExpatWoman Emirates Golf Club" />
-		<img src="/assets/gallery/graphic/expatwoman-marketing.webp" alt="ExpatWoman Marketing" />
-		<img src="/assets/gallery/graphic/qudra-advertising-1.webp" alt="Qudra Advertising" />
-		<img src="/assets/gallery/graphic/qudra-advertising-2.webp" alt="Qudra Advertising" />
-		<img src="/assets/gallery/graphic/qatar-airways-1.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-2.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-3.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-4.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-5.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-6.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-7.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-8.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-9.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-10.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-11.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/qatar-airways-12.webp" alt="Qatar Airways Marketing" />
-		<img src="/assets/gallery/graphic/depa-1.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-2.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-3.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-4.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-5.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-6.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-7.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-8.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-9.webp" alt="Depa Group" />
-		<img src="/assets/gallery/graphic/depa-10.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/cobone-spin-to-win.webp" alt="Cobone Spin to Win" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/women-of-tomorrow.webp" alt="Women Of Tomorrow" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/cobone-we-are-five.webp" alt="Cobone We're 5" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-gone-global.webp" alt="ExpatWoman Gone Global" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-gone-global-2.webp" alt="ExpatWoman Gone Global" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-demographics.webp" alt="ExpatWoman Demographics" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-effective-measure-rankings.webp" alt="ExpatWoman Demographics" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-middle-east-survey.webp" alt="ExpatWoman Middle East Survey" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-middle-east-survey-2.webp" alt="ExpatWoman Middle East Survey" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-coffee-morning.webp" alt="ExpatWoman Coffee Morning" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-coffee-shoppe.webp" alt="ExpatWoman Coffee Shoppe" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-aspin-open-house.webp" alt="ExpatWoman Aspin Open House" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-bumps.webp" alt="ExpatWoman Bumps" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-medstar.webp" alt="ExpatWoman Medstar" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-mums.webp" alt="ExpatWoman Mums" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-mums-2.webp" alt="ExpatWoman Mums" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-mums-3.webp" alt="ExpatWoman Mums" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-mums-4.webp" alt="ExpatWoman Mums" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-mums-5.webp" alt="ExpatWoman Mums" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-treasure-hunt.webp" alt="ExpatWoman Treasure Hunt" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/ewfood-recipe.webp" alt="EWfood Recipe" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/ewfood-recipe-2.webp" alt="EWfood Recipe" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-alba.webp" alt="ExpatWoman Alba" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-big-dayout.webp" alt="ExpatWoman Big Dayout" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-festive-family-fair-1.webp" alt="ExpatWoman Festive Family Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-festive-family-fair-2.webp" alt="ExpatWoman Festive Family Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-festive-family-fair-3.webp" alt="ExpatWoman Festive Family Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-festive-family-fair-4.webp" alt="ExpatWoman Festive Family Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-festive-family-fair-5.webp" alt="ExpatWoman Festive Family Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-education-fair-1.webp" alt="ExpatWoman Education Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-education-fair-2.webp" alt="ExpatWoman Education Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-education-fair-3.webp" alt="ExpatWoman Education Fair" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-1.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-2.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-burj-al-arab-breakfast-3.webp" alt="ExpatWoman Burj Al Arab Breakfast" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-burj-al-arab-moonlit-swim.webp" alt="ExpatWoman Burj Al Arab Moonlit Swim" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-coffee-morning-1.webp" alt="ExpatWoman Coffee Morning" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-coffee-morning-2.webp" alt="ExpatWoman Coffee Morning" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-emirates-golf-club-1.webp" alt="ExpatWoman Emirates Golf Club" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-emirates-golf-club-2.webp" alt="ExpatWoman Emirates Golf Club" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/expatwoman-marketing.webp" alt="ExpatWoman Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qudra-advertising-1.webp" alt="Qudra Advertising" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qudra-advertising-2.webp" alt="Qudra Advertising" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-1.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-2.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-3.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-4.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-5.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-6.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-7.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-8.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-9.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-10.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-11.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/qatar-airways-12.webp" alt="Qatar Airways Marketing" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-1.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-2.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-3.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-4.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-5.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-6.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-7.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-8.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-9.webp" alt="Depa Group" />
+		<img class="lazyload" src="" data-src="/assets/gallery/graphic/depa-10.webp" alt="Depa Group" />
 	</div>
 </section>
 
@@ -159,7 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/popper.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/slick.min.js"></script>
+<script src="/assets/js/lazyload.min.js"></script>
 <script src="/assets/js/main.js"></script>
 
 

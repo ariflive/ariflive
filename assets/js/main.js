@@ -8,6 +8,7 @@ function callGA4Event(event) {
 
 // Init
 $(function() {
+	lazyload();
 
 	// Gallery Loader
 	jQuery(window).on('load', function () {
