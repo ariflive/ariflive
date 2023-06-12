@@ -6,17 +6,17 @@ function callGA4Event(event) {
 	});
 }
 
+// Gallery Loader
+jQuery(window).on('load', function () {
+	if ($('.js-gallery').length) {
+		$('.js-gallery').css('visibility', 'visible');
+		$('.js-loader').hide(20);
+	}
+});
+
 // Init
 $(function() {
 	lazyload();
-
-	// Gallery Loader
-	jQuery(window).on('load', function () {
-		if ($('.js-gallery').length) {
-			$('.js-gallery').css('visibility', 'visible');
-			$('.js-loader').hide(20);
-		}
-	});
 
 	// Count Items
 	if ($('.js-items').length) {
