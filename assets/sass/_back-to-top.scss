@@ -1,0 +1,25 @@
+.back-to-top {
+	z-index: 10;
+	position: fixed;
+	right: 2rem;
+	bottom: 5rem;
+	opacity: 0.75;
+	cursor: pointer;
+	@media (max-width: $breakpoint-tablet-lg) {
+		right: 1rem;
+	}
+	@media (max-width: $breakpoint-mobile-sm) {
+		bottom: 3rem;
+	}
+	.svg {
+		@include dropshadows;
+		width: 90px;
+		height: auto;
+		@media (max-width: $breakpoint-tablet-lg) {
+			width: 70px;
+		}
+		@media (max-width: $breakpoint-mobile-sm) {
+			width: 50px;
+		}
+	}
+}

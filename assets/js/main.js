@@ -18,6 +18,20 @@ jQuery(window).on('load', function () {
 // Init
 $(function() {
 	lazyload();
+	
+	// Show | Hide Icon
+	$('.js-gallery').on('scroll', function() {
+		if ($(this).scrollTop() > 100) {
+			$('.js-back-to-top').fadeIn();
+		} else {
+			$('.js-back-to-top').fadeOut();
+		}
+	});
+
+	// Animate To Top
+	$('.js-back-to-top').on('click', function(e){
+		$('.js-gallery').animate({ scrollTop: 0 }, 600);
+	});
 
 	// Count Items
 	if ($('.js-items').length) {
