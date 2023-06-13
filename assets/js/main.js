@@ -17,8 +17,12 @@ jQuery(window).on('load', function () {
 
 // Init
 $(function() {
-	lazyload();
-	
+
+	// lazyload()
+	if ($('.lazyload').length) {
+		lazyload();
+	}
+
 	// Show | Hide Icon
 	$('.js-gallery').on('scroll', function() {
 		if ($(this).scrollTop() > 100) {
