@@ -1,0 +1,27 @@
+{
+  "name": "ariflive.com",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariflive/ariflive.git"
+  },
+  "author": "ariflive.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariflive/ariflive/issues"
+  },
+  "homepage": "https://ariflive.com",
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.86.0"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
