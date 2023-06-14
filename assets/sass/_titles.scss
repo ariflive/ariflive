@@ -43,7 +43,15 @@
 			}
 			@media (max-width: $breakpoint-mobile) {
 				font-size: 0.85rem;
-				line-height: initial;
+				line-height: 1.15rem;
+			}
+		}
+		.linkedin {
+			margin: 0 0.5rem;
+			width: auto;
+			height: 17px;
+			@media (max-width: $breakpoint-mobile) {
+				height: 15px;
 			}
 		}
 	}
