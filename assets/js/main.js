@@ -39,7 +39,12 @@ $(function() {
 
 	// Count Items
 	if ($('.js-items').length) {
-		$('.js-count').html($('.js-items').children().length);
+		if ($('.js-items').find('img').length) {
+			$('.js-count').html($('.js-items').find('img').length);
+		}
+		if ($('.js-items').find('video').length) {
+			$('.js-count').html($('.js-items').find('video').length);
+		}
 	}
 
 });
