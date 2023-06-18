@@ -20,6 +20,27 @@
 		align-items: flex-start;
 		flex-wrap: nowrap;
 		background-color: $bg;
+		p.title {
+			margin: 2.5rem auto 0 auto;
+			font-size: 2.25rem;
+			font-weight: $bold;
+			line-height: normal;
+			color: $white;
+			@media (max-width: $breakpoint-tablet-lg) {
+				font-size: 2rem;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				margin: 2rem auto 0 auto;
+				font-size: 1.75rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				width: 85%;
+				font-size: 1.35rem;
+			}
+			@media (max-width: $breakpoint-mobile-sm) {
+				font-size: 1.15rem;
+			}
+		}
 		img {
 			@include corners;
 			@include dropshadows;
@@ -43,6 +64,7 @@
 		height: auto;
 		.items {
 			background-color: $black;
+			p.title,
 			img {
 				max-width: 85%;
 				max-height: 100%;
@@ -56,6 +78,7 @@
 		height: auto;
 		.items {
 			background-color: $black;
+			p.title,
 			img {
 				max-width: 85%;
 				max-height: 100%;
@@ -69,6 +92,7 @@
 		height: auto;
 		.items {
 			background-color: $black;
+			p.title,
 			img {
 				max-width: 85%;
 				max-height: 100%;
