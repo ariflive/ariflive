@@ -42,9 +42,6 @@ $(function() {
 		if ($('.js-items').find('.item').length) {
 			$('.js-count').html($('.js-items').find('.item').length);
 		}
-		if ($('.js-items').find('video').length) {
-			$('.js-count').html($('.js-items').find('video').length);
-		}
 	}
 
 });
