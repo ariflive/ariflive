@@ -130,6 +130,37 @@
 			}
 		}
 	}
+	h6 {
+		margin-left: 1rem;
+		font-size: 1.05rem;
+		font-weight: $normal;
+		line-height: normal;
+		color: $secondary-70;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		@media (max-width: $breakpoint-tablet) {
+			margin-left: 0.5rem;
+			font-size: 1rem;
+		}
+		@media (max-width: $breakpoint-mobile) {
+			font-size: 0.80rem;
+		}
+		small {
+			@include corners;
+			display: inline-flex;
+			margin: 0 0.45rem;
+			padding: 0.25rem 0.45rem;
+			font-size: 0.70rem;
+			font-weight: $bold;
+			line-height: 0.75rem;
+			color: $grey;
+			background-color: $bg;
+			@media (max-width: $breakpoint-mobile) {
+				display: none;
+			}
+		}
+	}
 	p {
 		margin-left: 1.5rem;
 		font-size: 1.05rem;
