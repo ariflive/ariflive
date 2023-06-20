@@ -6,11 +6,16 @@ function callGA4Event(event) {
 	});
 }
 
-// Gallery Loader
+// Handle Loader
 jQuery(window).on('load', function () {
-	if ($('.js-gallery').length) {
+	if ($('.js-gallery').length) { // Gallery
 		$('.js-header').css('visibility', 'visible');
 		$('.js-gallery').css('visibility', 'visible');
+		$('.js-loader').hide(20);
+	}
+	if ($('.js-case-study').length) { // Case Study
+		$('.js-header').css('visibility', 'visible');
+		$('.js-case-study').css('visibility', 'visible');
 		$('.js-loader').hide(20);
 	}
 });
@@ -18,24 +23,43 @@ jQuery(window).on('load', function () {
 // Init
 $(function() {
 
+	// Set Time Ago
+	if ($('.timeago').length) {
+		$('.timeago').timeago();
+	}
+
 	// lazyload()
 	if ($('.lazyload').length) {
 		lazyload();
 	}
 
-	// Show | Hide Icon
-	$('.js-gallery').on('scroll', function() {
-		if ($(this).scrollTop() > 100) {
-			$('.js-back-to-top').fadeIn();
-		} else {
-			$('.js-back-to-top').fadeOut();
-		}
-	});
+	// Animate to Top in Gallery
+	if ($('.js-gallery').length) {
+		$('.js-back-to-top').on('click', function(e){
+			$('.js-gallery').animate({ scrollTop: 0 }, 600);
+		});
+		$('.js-gallery').on('scroll', function() { // Show | Hide Icon
+			if ($(this).scrollTop() > 100) {
+				$('.js-back-to-top').fadeIn();
+			} else {
+				$('.js-back-to-top').fadeOut();
+			}
+		});
+	}
 
-	// Animate To Top
-	$('.js-back-to-top').on('click', function(e){
-		$('.js-gallery').animate({ scrollTop: 0 }, 600);
-	});
+	// Animate to Top in Case Study
+	if ($('.js-case-study').length) {
+		$('.js-back-to-top').on('click', function(e){
+			$('.js-case-study').animate({ scrollTop: 0 }, 600);
+		});
+		$('.js-case-study').on('scroll', function() { // Show | Hide Icon
+			if ($(this).scrollTop() > 100) {
+				$('.js-back-to-top').fadeIn();
+			} else {
+				$('.js-back-to-top').fadeOut();
+			}
+		});
+	}
 
 	// Count Items
 	if ($('.js-items').length) {
