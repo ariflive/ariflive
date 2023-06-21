@@ -90,6 +90,34 @@
 				margin: 0 0 0 0;
 			}
 		}
+		em {
+			position: relative;
+			margin: 1rem 0 1.5rem 0;
+			padding: 0 0 0 3rem;
+			font-size: 1.25rem;
+			line-height: 1.85rem;
+			font-weight: $bold;
+			font-style: normal;
+			text-transform: capitalize;
+			color: $black;
+			@media (max-width: $breakpoint-mobile) {
+				margin: 0 0 0.75rem 0;
+				font-size: 1rem;
+				line-height: 1.5rem;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				margin: 0 0 0 -3rem;
+				z-index: 1;
+				background-image: url('/assets/images/quote.svg');
+				background-position: left top;
+				background-repeat: no-repeat;
+				width: 36px;
+				height: 36px;
+				opacity: 0.125;
+			}
+		}
 		small {
 			margin: 0 0 0.5rem 0;
 			font-size: 0.85rem;
@@ -106,7 +134,7 @@
 		}
 		img {
 			@include corners;
-			margin: 0 0 1.25rem 0;
+			margin: 0.5rem 0 1.75rem 0;
 			max-width: 100%;
 		}
 		ul {
