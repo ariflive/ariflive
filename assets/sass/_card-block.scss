@@ -56,6 +56,24 @@
 		}
 	}
 	.contents {
+		small {
+			margin: 0.75rem 0 0 0;
+			display: flex;
+			font-size: 0.70rem;
+			font-weight: $normal;
+			text-transform: uppercase;
+			color: $grey;
+			@media (max-width: $breakpoint-tablet-lg) {
+				font-size: 0.80rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.75rem;
+			}
+			time {
+				margin-left: 0.25rem;
+				color: $grey;
+			}
+		}
 		p {
 			margin: 0.75rem 0 0 0;
 			font-size: 0.70rem;
