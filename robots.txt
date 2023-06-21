@@ -1,7 +1,7 @@
 User-agent: *
 
 Allow: /index.html
-
+Allow: /case-study/
 
 Disallow: /assets/
 Disallow: /gallery/
