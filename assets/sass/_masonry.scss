@@ -59,6 +59,7 @@
 			max-width: 100%;
 			width: auto;
 			height: auto;
+			background-color: $white;
 			@media (max-width: $breakpoint-tablet) {
 				margin: 1rem auto 0 auto;
 			}
