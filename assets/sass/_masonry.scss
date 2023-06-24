@@ -25,7 +25,7 @@
   column-gap: 2rem;
 	margin: 0 auto;
 	max-width: 96%;
-	@media (max-width: $breakpoint-tablet-lg) {
+	@media (max-width: $breakpoint-desktop) {
 		column-count: 2;
 	}
 	@media (max-width: $breakpoint-tablet) {
@@ -71,7 +71,7 @@
 		}
 		p {
 			position: relative;
-			margin: 1rem 0 0 0;
+			margin: 2rem 0 0 0;
 			padding: 0 0 0 4rem;
 			font-size: 1.15rem;
 			line-height: 1.75rem;
@@ -79,12 +79,12 @@
 			text-align: left;
 			color: $white;
 			@media (max-width: $breakpoint-tablet-lg) {
-				margin: 0.75rem 0 0 0;
+				margin: 2rem 0 0 0;
 				font-size: 1rem;
 				line-height: 1.5rem;
 			}
 			@media (max-width: $breakpoint-mobile) {
-				margin: 0.5rem 0 0 0;
+				margin: 1.5rem 0 0 0;
 				font-size: 0.95rem;
 				line-height: 1.25rem;
 			}
