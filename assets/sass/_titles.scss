@@ -49,8 +49,10 @@
 		a {
 			@include corners;
 			display: inline-flex;
+			justify-items: center;
+			align-items: center;
 			margin-top: 0.75rem;
-			padding: 0.75rem 1.5rem;
+			padding: 0.85rem 1.5rem;
 			font-size: 0.85rem;
 			line-height: inherit;
 			font-weight: $normal;
@@ -59,13 +61,10 @@
 			color: $white;
 			background-color: $primary;
 			transition: $transition;
-			@media (max-width: $breakpoint-tablet) {
-				margin-top: 0.15rem;
-				font-size: 1.1rem;
-			}
 			@media (max-width: $breakpoint-mobile) {
-				font-size: 0.85rem;
-				line-height: 1.15rem;
+				padding: 0.75rem 1.25rem;
+				font-size: 0.75rem;
+				line-height: 1rem;
 			}
 			&:hover {
 				color: $white;
