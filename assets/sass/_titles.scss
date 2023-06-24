@@ -46,6 +46,32 @@
 				line-height: 1.15rem;
 			}
 		}
+		a {
+			@include corners;
+			display: inline-flex;
+			margin-top: 0.75rem;
+			padding: 0.75rem 1.5rem;
+			font-size: 0.85rem;
+			line-height: inherit;
+			font-weight: $normal;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $white;
+			background-color: $primary;
+			transition: $transition;
+			@media (max-width: $breakpoint-tablet) {
+				margin-top: 0.15rem;
+				font-size: 1.1rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 0.85rem;
+				line-height: 1.15rem;
+			}
+			&:hover {
+				color: $white;
+				background-color: $black;
+			}
+		}
 		.linkedin {
 			margin: 0 0.5rem;
 			width: auto;
