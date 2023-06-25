@@ -18,7 +18,6 @@
 			line-height: 1.5rem;
 		}
 		@media (max-width: $breakpoint-tablet) {
-			@include limit-six;
 			font-size: 0.85rem;
 			line-height: 1.25rem;
 		}
