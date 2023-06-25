@@ -81,6 +81,44 @@
 			}
 		}
 	}
+	.dropdowns {
+		display: flex;
+		margin-left: 1.5rem;
+		.svg {
+			width: auto;
+			height: 24px;
+		}
+		.links {
+			a {
+				display: inline-flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				padding: 0.75rem 1.75rem;
+				font-size: 1rem;
+				line-height: 1.15rem;
+				font-weight: $normal;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: $secondary-80;
+				@media (max-width: $breakpoint-tablet-lg) {
+					font-size: 0.95rem;
+				}
+				&:hover {
+					color: $secondary;
+					background-color: $bg;
+				}
+				.svg-sm {
+					margin: 0 0.65rem 0 0;
+					width: auto;
+					height: 16px;
+					@media (max-width: $breakpoint-tablet-lg) {
+						height: 13px;
+					}
+				}
+			}
+		}
+	}
 	.back {
 		@include corners-lg;
 		display: inline-flex;
