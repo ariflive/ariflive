@@ -3,23 +3,30 @@
 	position: fixed;
 	right: 2rem;
 	bottom: 5rem;
-	opacity: 0.75;
-	cursor: pointer;
 	@media (max-width: $breakpoint-tablet-lg) {
 		right: 1rem;
 	}
 	@media (max-width: $breakpoint-mobile-sm) {
 		bottom: 3rem;
 	}
-	.svg {
-		@include dropshadows;
-		width: 90px;
+	img {
+		@include circles;
+		@include glows;
+		width: 50px;
 		height: auto;
-		@media (max-width: $breakpoint-tablet-lg) {
-			width: 70px;
+		background-color: $secondary-70;
+		border: 1px solid $secondary-70;
+		opacity: 0.35;
+		cursor: pointer;
+		transition: $transition;
+		@media (max-width: $breakpoint-mobile) {
+			width: 40px;
 		}
 		@media (max-width: $breakpoint-mobile-sm) {
-			width: 50px;
+			width: 36px;
+		}
+		&:hover {
+			opacity: 0.5;
 		}
 	}
 }

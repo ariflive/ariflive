@@ -1,9 +1,9 @@
 .hero {
+	@include wrappers-sm;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 3rem auto;
-	width: 85%;
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin: 2rem auto;
 	}
@@ -12,116 +12,6 @@
 	}
 	@media (max-width: $breakpoint-mobile-sm) {
 		margin: 1.5rem auto;
-	}
-	.left {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: center;
-		width: 40%;
-		@media (max-width: $breakpoint-mobile) {
-			margin-bottom: 1rem;
-			width: 100%;
-			justify-content: center;
-		}
-		.image {
-			width: auto;
-			height: 400px;
-			@media (max-width: $breakpoint-desktop-lg) {
-				height: 500px;
-			}
-			@media (max-width: $breakpoint-desktop) {
-				height: 400px;
-			}
-			@media (max-width: $breakpoint-tablet-lg) {
-				height: 300px;
-			}
-			@media (max-width: $breakpoint-tablet) {
-				height: 250px;
-			}
-			@media (max-width: $breakpoint-mobile) {
-				height: 160px;
-			}
-			@media (max-width: $breakpoint-mobile-sm) {
-				height: 160px;
-			}
-		}
-	}
-	.right {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 55%;
-		@media (max-width: $breakpoint-mobile) {
-			width: 100%;
-		}
-		.contents {
-			p {
-				margin-bottom: 0.75rem;
-				font-family: 'Courier New', Courier, monospace;
-				font-size: 1.75rem;
-				color: $grey;
-				@media (max-width: $breakpoint-desktop-lg) {
-					font-size: 1.65rem;
-				}
-				@media (max-width: $breakpoint-desktop) {
-					font-size: 1.55rem;
-				}
-				@media (max-width: $breakpoint-tablet) {
-					font-size: 1.25rem;
-				}
-				@media (max-width: $breakpoint-mobile) {
-					margin-bottom: 0.5rem;
-					font-size: 1rem;
-				}
-			}
-			h5 {
-				margin-bottom: 0.75rem;
-				font-size: 4rem;
-				font-weight: $bold;
-				color: $secondary;
-				@media (max-width: $breakpoint-desktop-lg) {
-					font-size: 3.75rem;
-				}
-				@media (max-width: $breakpoint-desktop) {
-					font-size: 3.5rem;
-				}
-				@media (max-width: $breakpoint-tablet-lg) {
-					font-size: 3.25rem;
-				}
-				@media (max-width: $breakpoint-tablet) {
-					font-size: 1.85rem;
-				}
-				@media (max-width: $breakpoint-mobile) {
-					margin-bottom: 0.5rem;
-				}
-				@media (max-width: $breakpoint-mobile-sm) {
-					font-size: 2rem;
-				}
-			}
-			h1 {
-				font-size: 1.80rem;
-				line-height: initial;
-				font-weight: $lighter;
-				color: $grey;
-				@media (max-width: $breakpoint-desktop-lg) {
-					font-size: 1.65rem;
-				}
-				@media (max-width: $breakpoint-desktop) {
-					font-size: 1.55rem;
-				}
-				@media (max-width: $breakpoint-tablet-lg) {
-					font-size: 1.5rem;
-				}
-				@media (max-width: $breakpoint-tablet) {
-					font-size: 1.05rem;
-					font-weight: $light;
-				}
-				@media (max-width: $breakpoint-mobile-sm) {
-					font-size: 1.15rem;
-				}
-			}
-		}
 	}
 	.sep {
 		position: absolute;
@@ -144,6 +34,120 @@
 		}
 		@media (max-width: $breakpoint-mobile) {
 			bottom: -1.5rem;
+		}
+	}
+	.left {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		@media (max-width: $breakpoint-mobile) {
+			margin-bottom: 1rem;
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 55%;
+		@media (max-width: $breakpoint-mobile) {
+			width: 100%;
+		}
+	}
+	.image {
+		margin: 0 2.5rem 0 0;
+		width: auto;
+		height: 400px;
+		@media (max-width: $breakpoint-desktop-lg) {
+			height: 500px;
+		}
+		@media (max-width: $breakpoint-desktop) {
+			height: 400px;
+		}
+		@media (max-width: $breakpoint-tablet-lg) {
+			height: 300px;
+		}
+		@media (max-width: $breakpoint-tablet) {
+			height: 220px;
+		}
+		@media (max-width: $breakpoint-mobile) {
+			height: 160px;
+		}
+		@media (max-width: $breakpoint-mobile-sm) {
+			height: 160px;
+		}
+	}
+	.contents {
+		p {
+			margin-bottom: 0.75rem;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 1.75rem;
+			color: $grey;
+			@media (max-width: $breakpoint-desktop-lg) {
+				font-size: 1.65rem;
+			}
+			@media (max-width: $breakpoint-desktop) {
+				font-size: 1.55rem;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 1.25rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				margin-bottom: 0.5rem;
+				font-size: 1rem;
+			}
+		}
+		h5 {
+			margin-bottom: 0.75rem;
+			font-size: 4rem;
+			font-weight: $bold;
+			color: $secondary;
+			@media (max-width: $breakpoint-desktop-lg) {
+				font-size: 3.75rem;
+			}
+			@media (max-width: $breakpoint-desktop) {
+				font-size: 3.5rem;
+			}
+			@media (max-width: $breakpoint-tablet-lg) {
+				font-size: 3rem;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				margin-bottom: 0.75rem;
+				font-size: 1.85rem;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				margin-bottom: 0.5rem;
+			}
+			@media (max-width: $breakpoint-mobile-sm) {
+				font-size: 1.75rem;
+			}
+		}
+		h1 {
+			font-size: 1.80rem;
+			line-height: initial;
+			font-weight: $lighter;
+			color: $grey;
+			@media (max-width: $breakpoint-desktop-lg) {
+				font-size: 1.65rem;
+			}
+			@media (max-width: $breakpoint-desktop) {
+				font-size: 1.55rem;
+			}
+			@media (max-width: $breakpoint-tablet-lg) {
+				font-size: 1.35rem;
+			}
+			@media (max-width: $breakpoint-tablet) {
+				font-size: 1.05rem;
+				font-weight: $light;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 1rem;
+			}
+			@media (max-width: $breakpoint-mobile-sm) {
+				font-size: 0.90rem;
+			}
 		}
 	}
 }

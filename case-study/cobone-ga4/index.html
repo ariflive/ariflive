@@ -69,16 +69,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Header -->
-<header class="wrappers full sep-bottom sticky-header js-header">
-	<div class="wrappers headers">
-		<div class="left">
-			<a href="/" class="logo">
-				<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
+<header class="headers sticky js-header" style="visibility: hidden;">
+	<div class="left">
+		<a href="/" class="logo">
+			<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
+		</a>
+		<p>Case Study: Migrate to GA4 for Enhanced Google Analytics</p>
+	</div>
+	<div class="right">
+		<a href="/case-study/" class="back">Back</a>
+
+		<!-- Dropdown -->
+		<div class="dropdowns dropdown">
+			<a href="" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="/assets/icons/donut.svg" alt="Navigation" class="svg" />
 			</a>
-			<h6>Case Study: Migrate to GA4 for Enhanced Google Analytics</h6>
-		</div>
-		<div class="right">
-			<a href="/" class="back">Back</a>
+			<ul class="dropdown-menu links" aria-labelledby="dropdownMenu">
+				<li>
+					<a class="dropdown-item" href="/">
+						<img src="/assets/icons/home.svg" alt="Home" class="svg-sm" />
+						Home
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="/case-study/">
+						<img src="/assets/icons/case-study.svg" alt="Case Studies" class="svg-sm" />
+						Case Studies
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="/stories/">
+						<img src="/assets/icons/stories.svg" alt="My Stories" class="svg-sm" />
+						My Stories
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </header>

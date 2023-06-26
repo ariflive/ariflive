@@ -384,3 +384,21 @@
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
+
+@mixin wrappers {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin wrappers-sm {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@mixin wrappers-xs {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+}

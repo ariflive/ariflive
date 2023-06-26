@@ -35,7 +35,7 @@
 		color: $grey;
 		@media (max-width: $breakpoint-mobile) {
 			margin: 0.5rem 0 0 0;
-			font-size: 0.65rem;
+			font-size: 0.6125rem;
 		}
 	}
 	.icons {
@@ -50,8 +50,12 @@
 			margin: 0.45rem 0.45rem 0.45rem 0;
 			width: auto;
 			height: 19px;
-			@media (max-width: $breakpoint-mobile) {
+			@media (max-width: $breakpoint-tablet) {
+				margin: 0.25rem 0.25rem 0.25rem 0;
 				height: 16px;
+			}
+			@media (max-width: $breakpoint-mobile) {
+				height: 14px;
 			}
 		}
 	}

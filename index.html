@@ -64,46 +64,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Header -->
-<header class="wrappers full sep-bottom sticky-header">
-	<div class="wrappers headers">
-		<div class="left">
-			<a href="/" class="logo">
-				<img src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
+<header class="headers sticky">
+	<div class="left">
+		<a href="/" class="logo">
+			<img src="/assets/images/logo.svg" alt="Lead UI/UX Designer & Front-end Developer" />
+		</a>
+		<p>Lead UI/UX Designer & Front-end Developer</p>
+	</div>
+	<div class="right">
+		<a href="https://www.linkedin.com/in/ariflive/" target="_blank" class="linkedin" title="Linkedin" conclick="callGA4Event('linkedin');">
+			<img src="/assets/icons/linkedin.svg" alt="Linkedin" />
+		</a>
+		
+		<!-- Dropdown -->
+		<div class="dropdowns dropdown">
+			<a href="" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="/assets/icons/donut.svg" alt="Navigation" class="svg" />
 			</a>
-			<p>Lead UI/UX Designer & Front-end Developer</p>
-		</div>
-		<div class="right">
-			<a href="https://www.linkedin.com/in/ariflive/" target="_blank" class="icon" title="Linkedin" conclick="callGA4Event('linkedin');">
-				<img src="/assets/icons/linkedin.svg" alt="Linkedin" />
-			</a>
-			
-			<!-- Dropdown -->
-			<div class="dropdowns dropdown">
-				<a href="" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
-					<img src="/assets/icons/donut.svg" alt="Navigation" class="svg" />
-				</a>
-				<ul class="dropdown-menu links" aria-labelledby="dropdownMenu">
-					<li>
-						<a class="dropdown-item" href="/">
-							<img src="/assets/icons/home.svg" alt="Home" class="svg-sm" />
-							Home
-						</a>
-					</li>
-					<li>
-						<a class="dropdown-item" href="/stories/">
-							<img src="/assets/icons/stories.svg" alt="My Stories" class="svg-sm" />
-							My Stories
-						</a>
-					</li>
-				</ul>
-			</div>
+			<ul class="dropdown-menu links" aria-labelledby="dropdownMenu">
+				<li>
+					<a class="dropdown-item" href="/">
+						<img src="/assets/icons/home.svg" alt="Home" class="svg-sm" />
+						Home
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="/case-study/">
+						<img src="/assets/icons/case-study.svg" alt="Case Studies" class="svg-sm" />
+						Case Studies
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="/stories/">
+						<img src="/assets/icons/stories.svg" alt="My Stories" class="svg-sm" />
+						My Stories
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </header>
 
 
 <!-- Hero -->
-<section class="wrappers hero">
+<section class="hero">
 	<div class="left">
 		<img src="/assets/images/hero.svg" alt="Arif Muhammad - Lead UI/UX Designer & Front-end Developer" class="image" />
 	</div>
@@ -322,7 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Case Studies -->
-<section class="wrappers work">
+<section class="layout-case-study">
 	<div class="titles">
 		<h2>Exploring Case Studies</h2>
 		<p>Valuable insights and in-depth analysis of real-world scenarios</p>
@@ -489,336 +493,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 			</li>
 
-			<!-- cobone-web -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/cobone-web/" class="image" title="Case Study: Revitalizing Cobone's Web Presence">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/cobone-web-1.webp" alt="Case Study: Revitalizing Cobone's Web Presence" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2022-01-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/cobone-web/">Revitalizing Cobone's Web Presence: A Dynamic Rebranding Journey</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/figma.svg" alt="Figma" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/api.svg" alt="APIs" />
-						<img src="/assets/icons/json.svg" alt="Json" />
-						<img src="/assets/icons/git.svg" alt="Git" />
-						<img src="/assets/icons/jenkins.svg" alt="Jenkins" />
-					</div>
-				</div>
-			</li>
-
-			<!-- email-genius -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/email-genius/" class="image" title="Case Study: Development of an Email Automation">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/email-genius-1.webp" alt="Case Study: Development of an Email Automation" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2021-04-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/email-genius/">Case Study: Development of an Email Automation</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/figma.svg" alt="Figma" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/json.svg" alt="Json" />
-						<img src="/assets/icons/git.svg" alt="Git" />
-					</div>
-				</div>
-			</li>
-
-			<!-- 5dayslings -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/5dayslings/" class="image" title="Case Study: Rebranding, Logo Design, UI/UX Design">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/portfolio/cover/5dayslings.webp" alt="Case Study: Rebranding, Logo Design, UI/UX Design" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2020-07-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/5dayslings/">Case Study: Rebranding, Logo Design, UI/UX Design</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/figma.svg" alt="Figma" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/wordpress.svg" alt="WordPress" />
-						<img src="/assets/icons/php.svg" alt="PHP" />
-						<img src="/assets/icons/mysql.svg" alt="MySQL" />
-						<img src="/assets/icons/json.svg" alt="Json" />
-						<img src="/assets/icons/git.svg" alt="Git" />
-					</div>
-				</div>
-			</li>
-
-			<!-- cobone-merchant-app -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/cobone-merchant-app/" class="image" title="Case Study: Cobone Merchant App Gets a Major Makeover">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/cobone-merchant-app-1.webp" alt="Case Study: Cobone Merchant App Gets a Major Makeover" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2018-05-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/cobone-merchant-app/">Case Study: Cobone Merchant App Gets a Major Makeover</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/xd.svg" alt="XD" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-					</div>
-				</div>
-			</li>
-
-			<!-- expatwoman-web -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/expatwoman-web/" class="image" title="Case Study: Redesigning and Developing Expatwoman">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/expatwoman-web-1.webp" alt="Case Study: Redesigning and Developing Expatwoman" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2018-02-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/expatwoman-web/">Case Study: Redesigning and Developing Expatwoman</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/xd.svg" alt="Adobe XD" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-					</div>
-				</div>
-			</li>
-
-			<!-- ewmoda -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/ewmoda/" class="image" title="Case Study: Enhancing User Experience for ewmoda">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/ewmoda-1.webp" alt="Case Study: Enhancing User Experience for ewmoda" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2017-09-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/ewmoda/">Case Study: Enhancing User Experience for ewmoda</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/xd.svg" alt="Adobe XD" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-					</div>
-				</div>
-			</li>
-
-			<!-- reaach -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/reaach/" class="image" title="Case Study: Branding, Logo Design, UI/UX, and WordPress Development">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/reaach-1.webp" alt="Case Study: Branding, Logo Design, UI/UX, and WordPress Development" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2017-09-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/reaach/">Case Study: Branding, Logo Design, UI/UX, and WordPress Development</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/figma.svg" alt="Figma" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/wordpress.svg" alt="WordPress" />
-						<img src="/assets/icons/php.svg" alt="PHP" />
-						<img src="/assets/icons/mysql.svg" alt="MySQL" />
-						<img src="/assets/icons/json.svg" alt="Json" />
-						<img src="/assets/icons/git.svg" alt="Git" />
-					</div>
-				</div>
-			</li>
-
-			<!-- croutique -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/croutique/" class="image" title="Case Study: UI/UX Web Design for the Croutique Website">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/croutique-1.webp" alt="Case Study: UI/UX Web Design for the Croutique Website" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2016-05-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/croutique/">Case Study: UI/UX Web Design for the Croutique Website</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/xd.svg" alt="Adobe XD" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/sass.svg" alt="SASS" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-					</div>
-				</div>
-			</li>
-
-			<!-- expatwoman-brand -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/expatwoman-brand/" class="image" title="Case Study: Revitalizing ExpatWoman">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/expatwoman-brand-1.webp" alt="Case Study: Revitalizing ExpatWoman" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2013-01-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/expatwoman-brand/">Case Study: Revitalizing ExpatWoman</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/xd.svg" alt="Adobe XD" />
-						<img src="/assets/icons/invision.svg" alt="InVision" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
-			<!-- expatwoman-demo -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/expatwoman-demo/" class="image" title="Case Study: Engaging Banner and Brochure Design for ExpatWoman">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/expatwoman-demo-1.webp" alt="Case Study: Engaging Banner and Brochure Design for ExpatWoman" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2012-04-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/expatwoman-demo/">Case Study: Engaging Banner and Brochure Design for ExpatWoman</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
-			<!-- chronevo -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/chronevo/" class="image" title="A New Look for ChronEVO: A Case Study on Rebranding a Classic Car Website">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/chronevo/1.webp" alt="A New Look for ChronEVO: A Case Study on Rebranding a Classic Car Website" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2011-03-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/chronevo/">A New Look for ChronEVO: A Case Study on Rebranding a Classic Car Website</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
-			<!-- emirates-post -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/emirates-post/" class="image" title="Emirates Post's New Website: A Modern and User-Friendly Experience">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/emirates-post-1.webp" alt="Emirates Post's New Website: A Modern and User-Friendly Experience" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2010-12-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/emirates-post/">Emirates Post's New Website: A Modern and User-Friendly Experience</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/html5.svg" alt="HTML5" />
-						<img src="/assets/icons/css3.svg" alt="CSS3" />
-						<img src="/assets/icons/bootstrap.svg" alt="Bootstrap" />
-						<img src="/assets/icons/js.svg" alt="JavaScript" />
-						<img src="/assets/icons/jquery.svg" alt="jQuery" />
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
-			<!-- appna -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/appna/" target="_blank" class="image" title="Case Study: Graphic Design Case Study">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/appna-1.webp" alt="APPNA Association of Physicians 31st Annual Summer Meeting 2009: Graphic Design Case Study" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2009-06-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/appna/" target="_blank">Case Study: Graphic Design Case Study</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
-			<!-- depa -->
-			<li>
-				<div class="card-block">
-					<a href="/case-study/depa/" class="image" title="Case Study: Depa Group's Marketing Collateral">
-						<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=" data-src="/assets/case-study/depa-1.webp" alt="Case Study: Depa Group's Marketing Collateral" />
-					</a>
-					<div class="contents">
-						<small>Updated <time class="timeago" datetime="2008-12-15T10:45:30Z"></time></small>
-						<h5><a href="/case-study/depa/">Case Study: Depa Group's Marketing Collateral</a></h5>
-					</div>
-					<span class="used">Tech Stack</span>
-					<div class="icons">
-						<img src="/assets/icons/photoshop.svg" alt="Adobe Photoshop" />
-						<img src="/assets/icons/illustrator.svg" alt="Adobe Illustrator" />
-					</div>
-				</div>
-			</li>
-
 		</ul>
+	</div>
+	<div class="titles">
+		<a href="/case-study/" title="Exploring Case Studies" class="cta">See More</a>
 	</div>
 </section>
 
@@ -1364,7 +1042,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Sticky -->
-<section class="sticky">
+<section class="sticky-contact">
 	<a href="mailto:ariflive.com@gmail.com" target="_blank" class="image email">
 		<span class="tip">Email</span>
 		<img src="/assets/images/email.svg" alt="Send me an email" />
