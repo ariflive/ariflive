@@ -68,4 +68,17 @@ $(function() {
 		}
 	}
 
+	// Close Dropdown
+	if ($('.js-close-dropdown').length) {
+		$('.js-close-dropdown').on('click', function(e){
+			$('#dropdownMenu').dropdown('toggle');
+		});
+		$('#dropdownMenu').on("hide.bs.dropdown", function(){
+			document.querySelector('body').style.overflow = 'inherit';
+		});
+		$('#dropdownMenu').on("show.bs.dropdown", function(){
+			document.querySelector('body').style.overflow = 'hidden';
+		});
+	}
+
 });
