@@ -1,4 +1,5 @@
 .contacts {
+	@include wrappers-sm;
 	@include corners-lg;
 	overflow: inherit;
 	display: flex;

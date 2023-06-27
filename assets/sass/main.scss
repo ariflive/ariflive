@@ -6,7 +6,7 @@
 @import 'mixins';
 @import 'resets';
 
-@import 'wrappers';
+// @import 'wrappers';
 @import 'sticky';
 @import 'progress';
 @import 'loaders';
@@ -15,10 +15,7 @@
 
 @import 'services';
 @import 'work';
-@import 'brands';
-@import 'contacts';
 @import 'reviews';
-@import 'footers';
 @import 'pdf';
 @import 'chart';
 @import 'pricing';
@@ -27,15 +24,18 @@
 @import 'masonry';
 @import 'sliders';
 @import 'case-study';
-@import 'stories';
 
 
 
 
 @import 'headers';
+@import 'footers';
 @import 'hero';
 @import 'titles';
 @import 'layout-3';
 @import 'card-white';
 @import 'card-block';
 @import 'card-review';
+@import 'contacts';
+@import 'brands';
+@import 'stories';

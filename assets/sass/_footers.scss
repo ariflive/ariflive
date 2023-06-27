@@ -1,46 +1,53 @@
 .footers {
+	@include wrappers;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 3rem 0 5rem 0;
+	margin: 2rem 0 0 0;
+	padding: 4rem 3rem;
+	background-color: $bg;
+	border-top: 1px solid $borders;
+	@media (max-width: $breakpoint-tablet) {
+		padding: 4rem 2rem;
+	}
 	@media (max-width: $breakpoint-mobile) {
-		padding: 1rem 0 1.5rem 0;
+		padding: 2rem 0.75rem;
 	}
 	.left {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		width: 49%;
-		p {
-			font-size: 0.85rem;
-			font-weight: $normal;
-			color: $grey;
-			@media (max-width: $breakpoint-mobile) {
-				font-size: 0.75rem;
-			}
-		}
+		width: 48%;
 	}
 	.right {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
 		align-items: center;
-		width: 49%;
-		a {
-			font-size: 0.85rem;
-			font-weight: $normal;
+		width: 48%;
+	}
+	p {
+		font-size: 0.85rem;
+		font-weight: $normal;
+		color: $secondary-70;
+		@media (max-width: $breakpoint-mobile) {
+			font-size: 0.75rem;
+		}
+	}
+	a {
+		font-size: 0.85rem;
+		font-weight: $normal;
+		text-decoration: none;
+		color: $secondary-70;
+		transition: $transition;
+		@media (max-width: $breakpoint-mobile) {
+			font-size: 0.75rem;
+		}
+		&:hover {
 			text-decoration: none;
-			color: $grey;
-			transition: $transition;
-			@media (max-width: $breakpoint-mobile) {
-				font-size: 0.75rem;
-			}
-			&:hover {
-				text-decoration: none;
-				color: $secondary;
-			}
+			color: $secondary;
 		}
 	}
 }

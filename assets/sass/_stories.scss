@@ -1,8 +1,8 @@
 .stories {
+	@include wrappers-sm;
 	display: flex;
 	flex-direction: column;
-	margin: 3rem auto;
-	max-width: $maxWidth-sm;
+	margin: 2rem auto;
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin: 2rem auto;
 	}

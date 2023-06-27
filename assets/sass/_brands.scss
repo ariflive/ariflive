@@ -1,33 +1,34 @@
 .brands {
+	@include wrappers;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem auto 1rem auto;
-	padding: 2rem 0;
-	max-width: $maxWidth-xs;
+	margin: 2rem auto;
+	padding: 3rem 7rem;
+	background-color: $black;
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin-top: 4rem;
 	}
 	@media (max-width: $breakpoint-tablet) {
-		margin-top: 3rem;
-		padding: 1.5rem 0;
+		margin-top: 2rem;
+		padding: 1.5rem 3rem;
 	}
 	@media (max-width: $breakpoint-mobile) {
-		margin-top: 2rem;
+		padding: 1.5rem 1rem;
+	}
+	.titles {
+		h2 {
+			color: $white;
+		}
+		p {
+			color: $secondary-30;
+		}
 	}
 	.listing {
-		@media (max-width: $breakpoint-tablet) {
-			@include scrollbarsX;
-			padding-bottom: 1.5rem;
-		}
 		ul {
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
 			margin: 0 auto;
-			@media (max-width: $breakpoint-tablet) {
-				width: fit-content;
-				flex-wrap: nowrap;
-			}
 			li {
 				display: grid;
 				margin-top: 2rem;
@@ -36,18 +37,11 @@
 				@media (max-width: $breakpoint-tablet) {
 					margin-top: 1rem;
 					padding: 0 1rem;
-					width: 200px;
-					&:first-child {
-						padding-left: 0;
-					}
-					&:last-child {
-						padding-right: 0;
-					}
 				}
 				@media (max-width: $breakpoint-mobile) {
 					margin-top: 1rem;
-					width: 140px;
-					padding: 0 0.75rem;
+					padding: 0 0.5rem;
+					width: 33.333333%;
 				}
 				.image {
 					@include dropshadows;
@@ -57,17 +51,22 @@
 					display: flex;
 					width: 100%;
 					height: 160px;
-					border: 1px solid $secondary-10;
 					@media (max-width: $breakpoint-tablet-lg) {
-						height: 140px;
+						height: 120px;
+					}
+					@media (max-width: $breakpoint-tablet) {
+						height: 100px;
 					}
 					@media (max-width: $breakpoint-mobile) {
-						height: 120px;
+						height: 90px;
+					}
+					@media (max-width: $breakpoint-mobile-sm) {
+						height: 75px;
 					}
 					&:hover {
 						img {
 							transform: scale(1.05);
-							opacity: 1;
+							filter: none;
 						}
 					}
 					&.no-link {
@@ -78,7 +77,10 @@
 						object-fit: cover;
 						width: 100%;
 						height: 100%;
-						opacity: 0.85;
+						filter: grayscale(100%) opacity(90%);
+						@media (max-width: $breakpoint-mobile) {
+							filter: none;
+						}
 					}
 				}
 				.link {

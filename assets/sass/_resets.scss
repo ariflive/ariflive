@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-top: 5rem;
+  padding-top: 6rem;
   @media (max-width: $breakpoint-tablet) {
     padding-top: 3.75rem;
   }
@@ -65,4 +65,3 @@ body {
     }
   }
 }
-
