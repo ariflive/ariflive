@@ -1,0 +1,77 @@
+.skills {
+	@include wrappers;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	padding: 3rem 4rem;
+	background-color: $secondary;
+	@media (max-width: $breakpoint-tablet-lg) {
+		margin-top: 4rem;
+	}
+	@media (max-width: $breakpoint-tablet) {
+		margin-top: 2rem;
+		padding: 1.5rem 3rem;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		padding: 1.5rem 1rem;
+	}
+	.titles {
+		h2 {
+			color: $white;
+		}
+		p {
+			color: $secondary-30;
+		}
+	}
+	.listing {
+		@media (max-width: $breakpoint-tablet) {
+			@include scrollbarsX;
+		}
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			width: 90%;
+			max-width: $breakpoint-desktop-lg;
+			@media (max-width: $breakpoint-mobile) {
+				flex-direction: initial;
+				align-items: initial;
+				justify-content: initial;
+				flex-wrap: initial;
+				margin: 0 auto;
+				width: fit-content;
+				max-width: initial;
+			}
+			li {
+				display: grid;
+				margin-top: 2rem;
+				padding: 0 1.5rem;
+				width: 25%;
+				@media (max-width: $breakpoint-desktop) {
+					width: 33.33%;
+				}
+				@media (max-width: $breakpoint-tablet-lg) {
+					margin-top: 1.5rem;
+					padding: 0 0.75rem;
+					width: 33.33%;
+				}
+				@media (max-width: $breakpoint-tablet) {
+					margin-top: 1.5rem;
+					padding: 0 0.75rem;
+					width: 50%;
+				}
+				@media (max-width: $breakpoint-mobile) {
+					margin-top: 1rem;
+					width: 275px;
+				}
+				@media (max-width: $breakpoint-mobile-sm) {
+					width: 240px;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
