@@ -5,7 +5,7 @@
 	height: 20px;
 	margin: 0.85rem 0 0.95rem 0;
 	line-height: normal;
-	background-color: $progress-bg;
+	background-color: $bg;
 	@media (max-width: $breakpoint-mobile) {
 		height: 18px;
 	}
@@ -15,7 +15,7 @@
 		font-weight: $bolder;
 		letter-spacing: -0.015rem;
 		text-align: right;
-		color: $progress-text;
-		background-color: $progress-bar;
+		color: $white;
+		background-color: $grey-90;
 	}
 }
