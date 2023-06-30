@@ -98,7 +98,6 @@
 			line-height: 1.85rem;
 			font-weight: $bold;
 			font-style: normal;
-			text-transform: capitalize;
 			color: $black;
 			@media (max-width: $breakpoint-mobile) {
 				margin: 0 0 0.75rem 0;
@@ -139,23 +138,38 @@
 		}
 		ul {
 			margin: 0 0 1.25rem 0;
-			padding: 0 0 0 0.75rem;
-			list-style-type: disc;
-			list-style-position: inside;
-			list-style-image: none;
+			padding: 0;
+			list-style: none;
 			li {
+				position: relative;
 				margin: 0 0 0.5rem 0;
+				padding: 0 0.5rem 0 2.35rem;
 				font-size: 1.15rem;
+				line-height: 1.85rem;
 				font-weight: $normal;
-				line-height: 2rem;
 				color: $secondary;
 				@media (max-width: $breakpoint-mobile) {
 					margin: 0 0 0.75rem 0;
+					padding: 0 0.5rem 0 1.75rem;
 					font-size: 1rem;
 					line-height: 1.5rem;
 				}
 				&:last-child {
 					margin: 0 0 0 0;
+				}
+				&::after {
+					position: absolute;
+					content: "→"; // › →
+					left: 0;
+					top: 0;
+					font-size: 1.25rem;
+					line-height: 2rem;
+					font-weight: $bold;
+					color: $primary;
+					@media (max-width: $breakpoint-mobile) {
+						font-size: 1rem;
+						line-height: 1.5rem;
+					}
 				}
 			}
 		}
