@@ -24,6 +24,8 @@
 		}
 	}
 	.listing {
+		margin: 0 auto;
+		max-width: $maxWidth-sm;
 		ul {
 			display: flex;
 			justify-content: flex-start;
