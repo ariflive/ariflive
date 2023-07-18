@@ -7,6 +7,9 @@
 	@media (max-width: $breakpoint-tablet-lg) {
 		margin: 2rem auto;
 	}
+	&.sm {
+		max-width: 1024px;
+	}
 	.listing {
 		ul {
 			display: flex;
